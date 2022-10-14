@@ -1,8 +1,13 @@
 CS 319 ErasmusPlus
+
 Alperen Erdoğan 21703903 
+
 Mete Arıkan 
+
 Efe Can Tepe 21903187
+
 Deniz Çelik 22003271
+
 
 ErasmusPlus will be an web application that will make registering for Erasmus and Exchange programs easier for both the students and coordinators.
 
