@@ -24,7 +24,7 @@ function App() {
             </Row>
           </Col>
           <Col className='header-col'>
-            <Container className='container-box2'><h3 id='type-id'>Coordinator</h3></Container>
+            <Container className='container-box2'><p id='type-id'>User Type</p></Container>
           </Col>
         </Row>
       

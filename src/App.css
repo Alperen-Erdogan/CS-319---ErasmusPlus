@@ -160,6 +160,8 @@
   text-align: right;
   align-items: right;
   color: #ffffff;
+  font-size: 26px;
+  padding-right: 20px;
 }
 
 .container-box2{
@@ -186,4 +188,36 @@
 #bilkent-header-content{
   color: #ffffff;
   margin-left: 20px;
+}
+
+#user-name{
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav-link-style{
+  padding-left: 20px;
+  color: #ffffff !important;
+  font-size: 20px !important;
+  text-decoration: none;
+}
+#nav-title-style{
+  padding-left: 10px;
+}
+
+.nav-menu{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.nav-menu:hover{
+  background-color: #282c34 !important;
+}
+
+#selected{
+  background-color: #D24E4E;
 }
