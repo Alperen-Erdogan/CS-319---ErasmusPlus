@@ -11,11 +11,9 @@ import NavItem from 'react-bootstrap/NavItem';
 import Tab from 'react-bootstrap/Tab';
 
 function MyProfile() {
+    const pageTitle = "My Profile";
   return (
-    <div>
-        <header className="My_Profile">
-            My Profile
-        </header>    
+    <div>   
         <Container fluid>
             <Row className = "profileRow">
                 <Col className='ProfileOverviewCol'> 
