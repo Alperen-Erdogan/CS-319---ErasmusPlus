@@ -41,7 +41,7 @@ function App() {
                 <img src={logo} className="App-logo" alt="logo" />
 
                 
-                  Test Bilkent
+                  Test Bilkentdasdas
                 </p>
 
               </Container>
