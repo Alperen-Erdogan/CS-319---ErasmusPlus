@@ -20,11 +20,11 @@ function App() {
           <Col className='row-container-box'>
             <Row className='row-container-box'>
               <Container className='container-box'><img src={logo2} className="Bilkent-Logo" alt='bilkent logo'/></Container>
-              <Container className='container-box'><h1>Bilkent University | Erasmus Plus</h1></Container>
+              <Container className='container-box'><h1 id='bilkent-header-content'>Bilkent University | Erasmus Plus</h1></Container>
             </Row>
           </Col>
           <Col className='header-col'>
-            <Container className='container-box2'><h2 id='type-id'>Coordinator</h2></Container>
+            <Container className='container-box2'><h3 id='type-id'>Coordinator</h3></Container>
           </Col>
         </Row>
       

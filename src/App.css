@@ -44,8 +44,8 @@
   display: block;
   flex-basis: 100%;
   width: 300px;
-  color: #282c34;
-  background-color: #61dafb;
+  color: #ffffff;
+  background-color: #172330;
   text-align: left;
   min-height:  500px;
   height: 100%;
@@ -93,7 +93,7 @@
 }
 
 .bilkent-header{
-  background-color: crimson;
+  background-color: #1F3143;
   padding: 10px;
   height: 15vh;
   max-height: 20vh;
@@ -159,6 +159,7 @@
 #type-id{
   text-align: right;
   align-items: right;
+  color: #ffffff;
 }
 
 .container-box2{
@@ -180,4 +181,9 @@
 }
 .header-col{
   max-width: fit-content !important;
+}
+
+#bilkent-header-content{
+  color: #ffffff;
+  margin-left: 20px;
 }
