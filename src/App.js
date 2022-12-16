@@ -8,6 +8,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import logo2 from './items/bilkent-logo.png'
+import Login from './Login'
+import MyProfile from './MyProfile';
 
 
 function App() {
@@ -35,7 +37,8 @@ function App() {
         </Col>
       </Row>
     </Container>
-
+    <Login/>
+    <MyProfile/>
     </div>
   );
 }

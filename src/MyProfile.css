@@ -1,0 +1,51 @@
+.My_Profile {
+    display: flex;
+    text-align: left;
+    height: fit-content;
+    padding: 15px;
+    text-indent: 30px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: lightslategray; 
+    background-color: lightgrey;
+  }
+  
+  .profileEditCol{
+    max-width: 100%;
+    min-width: fit-content;
+    align-content: left;
+  }
+
+  .profileInfoCol{
+    max-width: 100%;
+    min-width: fit-content;
+    align-content: left;
+    }
+ 
+  .ProfileOVFirstRow{
+    margin-bottom: 40px;
+    }
+
+    .innerContainer{
+        background-color: lightgrey;
+    }
+
+    .profileRow {
+    padding: 20px;
+    }
+
+  .ProfileInfo {
+    text-align: left;
+    height: fit-content;
+    padding: 10px;
+    text-indent: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: lightslategray; 
+    background-color: lightgrey;
+  }
+  
+
+  

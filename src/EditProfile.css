@@ -1,0 +1,12 @@
+.standardTxtInput{
+    border-radius: 5px;
+    padding: auto;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.customBtn{
+    border-radius: 5px;
+    padding: auto;
+    margin: 10px;
+}
