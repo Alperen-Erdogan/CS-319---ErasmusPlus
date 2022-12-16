@@ -61,8 +61,6 @@ function App() {
 
         </Row>
       </Container>{/*end of main container*/}
-    <Login/>
-    <MyProfile/>
     </div>
   );
 }

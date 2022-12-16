@@ -82,6 +82,7 @@
   padding: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  height: 100vh;
 }
 
 .full{
@@ -94,6 +95,8 @@
 .bilkent-header{
   background-color: crimson;
   padding: 10px;
+  height: 15vh;
+  max-height: 20vh;
 }
 
 .coltest1{
@@ -107,6 +110,7 @@
   max-width: 100% !important;
   margin: 0px !important;
   padding: 0px !important;
+  height: 85vh !important;
 }
 
 .page-title{
@@ -119,6 +123,7 @@
   background-color: #EBECF2;
   padding: 0px !important;
   margin: 0px !important;
+  max-height:  85vh;
   
 }
 
@@ -130,7 +135,7 @@
   margin: 0px !important;
   overflow-y: scroll;
   overflow-x: scroll;
-  max-height:  600px;
+  max-height: 77vh;
 }
 
 .page-title-text{
@@ -138,6 +143,8 @@
   font: arial;
   font-style: normal;
   color: #5E5E5E;
+  max-height: 10vh;
+  height: 7vh;
 }
 
 .container-box{
