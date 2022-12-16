@@ -6,6 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import EditProfile from './EditProfile';
+import Nav from 'react-bootstrap/Nav';
+import NavItem from 'react-bootstrap/NavItem';
+import Tab from 'react-bootstrap/Tab';
 
 function MyProfile() {
   return (
@@ -16,7 +19,7 @@ function MyProfile() {
         <Container fluid>
             <Row className = "profileRow">
                 <Col className='ProfileOverviewCol'> 
-                    <Container fluid className = 'innerContainer'>
+                    <Container fluid className='profileOVCont'>
                         <Row className = 'ProfileOVFirstRow'>  
                             <Col><img alt='Profile'/></Col>
                             <Col>
@@ -25,31 +28,27 @@ function MyProfile() {
                             </Col>
                         </Row>
                         <Row>
-                            <Button className = 'ProfileOverviewBtn'>
-                                <img alt='ProfileIcon'/>
-                                Overview
-                            </Button>
-                        </Row>
-                        <Row>
-                            <Button className = 'ProfileOverviewBtn'>
-                                <img alt='ProfileOverviewIcon'/>
-                                Update Profile 
-                            </Button>
+                            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                                <Row className="clearfix">
+                                    <Col sm={4}>
+                                        <Nav bsStyle="pills" stacked>
+                                            <NavItem eventKey="first">Tab 1</NavItem>
+                                            <NavItem eventKey="second">Tab 2</NavItem>
+                                        </Nav>
+                                    </Col>
+                                    <Col sm={8}>
+                                        <Tab.Content animation>
+                                            <Tab.Pane eventKey="first">Tab 1 content</Tab.Pane>
+                                            <Tab.Pane eventKey="second">Tab 2 content</Tab.Pane>
+                                        </Tab.Content>
+                                    </Col>
+                                </Row>
+                            </Tab.Container>
                         </Row>
                     </Container>
                 </Col>
                 <Col className = 'ProfileEditCol'>
-                    <Container fluid className = 'innerContainer'>
-                        <Row>
-                        <Form.Text className="ProfileInfo">
-                            <img alt= 'profile overview icon'/>
-                            Profile Information
-                        </Form.Text>
-                        </Row>
-                        <Row>
-                            <EditProfile/>
-                        </Row>
-                    </Container>    
+                    <EditProfile/>
                 </Col>
             </Row>      
         </Container>

@@ -8,21 +8,31 @@ import Form from 'react-bootstrap/Form';
 
 function EditProfile() {
   return (
-    <div> 
-        <Form>
-            <Form.Group className="standardTxtInput">
-                <Form.Label> First Name</Form.Label>
-                <Form.Control disabled className = "standardTxtInput" type = "firstName" placeholder='First Name'/>
-            </Form.Group>
+    <div>
+       <Container fluid className = 'editProfileCont'>
+            <Row>
+                <Form.Text className="ProfileInfo">
+                    <img alt= 'profile overview icon'/>
+                    Profile Information
+                </Form.Text>
+            </Row>
+            <Row>
+                <Form>
+                    <Form.Group className="standardTxtInput">
+                        <Form.Label> First Name</Form.Label>
+                        <Form.Control disabled className = "standardTxtInput" type = "firstName" placeholder='First Name'/>
+                    </Form.Group>
 
-            <Form.Group className="standardTxtInput" controlId="formBasicPassword">
-                <Form.Label>Surname</Form.Label>
-                <Form.Control disabled className = "standardTxtInput" type = "surname" placeholder='Surname'/>
-            </Form.Group>
-            <Button variant="primary" className = 'customBtn'>
-                Confirm Changes
-            </Button>
-        </Form>
+                    <Form.Group className="standardTxtInput" controlId="formBasicPassword">
+                        <Form.Label>Surname</Form.Label>
+                        <Form.Control disabled className = "standardTxtInput" type = "surname" placeholder='Surname'/>
+                    </Form.Group>
+                    <Button variant="primary" className = 'customBtn'>
+                        Confirm Changes
+                    </Button>
+                </Form>
+            </Row>
+        </Container>  
     </div>
     );
 }

@@ -9,4 +9,11 @@
     border-radius: 5px;
     padding: auto;
     margin: 10px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.editProfileCont{
+    background-color: lightgrey;
+    border-radius: 5px;
 }
