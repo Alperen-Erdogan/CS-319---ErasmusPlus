@@ -111,7 +111,6 @@
   background-color: white;
   padding: 0px !important;
   margin: 0px !important;
-
 }
 
 .main-content-container{
@@ -126,4 +125,11 @@
   padding-left: 48px !important;
   padding-right: 32px !important;
   margin: 0px !important;
+}
+
+.page-title-text{
+  padding: 10px;
+  font: arial;
+  font-style: normal;
+  color: #5E5E5E;
 }

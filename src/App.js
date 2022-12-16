@@ -17,6 +17,7 @@ function App() {
 
       <header className="bilkent-header"> {/*Main Header*/}
       <img src={logo2} className="Bilkent-Logo" alt='bilkent logo'/>
+      <h1>Bilkent University | Erasmus Plus</h1>
       </header>
 
       <Container fluid disableGutters={true}>{/*Main Container*/}
@@ -30,7 +31,7 @@ function App() {
             <Container fluid className='main-content-container'>{/*=================Contents Container================*/}
 
               <header className='page-title'> {/*Page title*/}
-                <h1>{pageTitle}</h1>
+                <h1 className='page-title-text'>{pageTitle}</h1>
               </header>
 
               <Container fluid className='content-container'>{/*Put contents in there*/}
