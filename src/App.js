@@ -16,8 +16,19 @@ function App() {
     <div className='clear'>
 
       <header className="bilkent-header"> {/*Main Header*/}
-      <img src={logo2} className="Bilkent-Logo" alt='bilkent logo'/>
-      <h1>Bilkent University | Erasmus Plus</h1>
+        <Row className='row-container-box'>
+          <Col className='row-container-box'>
+            <Row className='row-container-box'>
+              <Container className='container-box'><img src={logo2} className="Bilkent-Logo" alt='bilkent logo'/></Container>
+              <Container className='container-box'><h1>Bilkent University | Erasmus Plus</h1></Container>
+            </Row>
+          </Col>
+          <Col className='header-col'>
+            <Container className='container-box2'><h2 id='type-id'>Coordinator</h2></Container>
+          </Col>
+        </Row>
+      
+      
       </header>
 
       <Container fluid disableGutters={true}>{/*Main Container*/}

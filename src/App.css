@@ -56,9 +56,10 @@
 }
 
 .Bilkent-Logo{
-  width: 100px;
+  width: 120px;
   text-align: center;
   align-items: center;
+  margin: 5px;
 }
 
 .mini-logo{
@@ -92,6 +93,7 @@
 
 .bilkent-header{
   background-color: crimson;
+  padding: 10px;
 }
 
 .coltest1{
@@ -132,4 +134,39 @@
   font: arial;
   font-style: normal;
   color: #5E5E5E;
+}
+
+.container-box{
+  padding: 0px !important;
+  margin: 0px !important;
+  width: fit-content !important;
+  height: fit-content !important;
+  text-align: center;
+  align-items: center;
+}
+
+#type-id{
+  text-align: right;
+  align-items: right;
+}
+
+.container-box2{
+  padding: 0px !important;
+  margin: 0px !important;
+  height: fit-content !important;
+  text-align: right !important;
+  align-items: right !important;
+  float: inline-end;
+}
+
+.row-container-box{
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 100% !important;
+  height: fit-content ;
+  text-align: center;
+  align-items: center;
+}
+.header-col{
+  max-width: fit-content !important;
 }
