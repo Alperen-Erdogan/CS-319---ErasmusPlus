@@ -3,7 +3,6 @@ import './App.css';
 import Header from './Header';
 import Content from './Content';
 import Sidebar from './Sidebar';
-import Login from './Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -29,7 +28,7 @@ function App() {
         <header className="full">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Deniz asdasdasdasdasdasdasdasdasdasdas{name}
+          Deniz asdasdasdasdasdasdasdasdasdas{name}
         </p>
       </header>
       </Container>
