@@ -3,6 +3,7 @@
 }
 
 .App-logo {
+
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +36,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.SideBar-design{
+  align-items: left;
+  box-sizing: border-box;
+  display: block;
+  flex-basis: 100%;
+  width: 300px;
+  color: #282c34;
+  background-color: #61dafb;
+  text-align: left;
+  height: 1080px;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.Bilkent-Logo{
+  width: 100px;
+  text-align: center;
+  align-items: center;
+}
+
+.mini-logo{
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.test-object{
+  display: block;
+}
+
+.button-test{
+  color: black;
+  background-color: red;
+}
+
+.clear{
+  margin: 0px;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.full{
+  width: auto;
+  background-color: #282c34;
+  box-sizing: border-box;
+  display: block;
+}
+
+.bilkent-header{
+  background-color: crimson;
+}
+
+.coltest1{
+  max-width: 300px !important;
+  margin: 0px !important;
+  padding: 0px !important;
 }
