@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 const express = require("express") // Starting Point of the server
-const port = 3000
+const port = 5000
 const MyProfileStudent = require("./Routes/StudentRoutes/MyProfileStudent")
 const MyAplicationStudent = require("./Routes/StudentRoutes/MyApplicationStudent")
 const DocumentsStudent = require("./Routes/StudentRoutes/DocumentsStudent")
