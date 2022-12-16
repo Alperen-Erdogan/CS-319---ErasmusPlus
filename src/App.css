@@ -119,6 +119,8 @@
   background-color: #EBECF2;
   padding: 0px !important;
   margin: 0px !important;
+  overflow-y: scroll;
+  max-height:  600px;
 }
 
 .content-container{
