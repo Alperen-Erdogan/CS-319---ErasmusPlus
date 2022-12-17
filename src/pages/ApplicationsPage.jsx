@@ -28,7 +28,7 @@ const ApplicationsPage = () => {
 
 </header>
 
-<Container fluid disableGutters={true}>{/*Main Container*/}
+<Container fluid>{/*Main Container*/}
 <Row> {/*Main Row*/}
 
   <Col className='coltest1'> {/*Navbar column*/}
@@ -44,6 +44,7 @@ const ApplicationsPage = () => {
 
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
+          
 
         </Container>
       </Container>

@@ -32,9 +32,9 @@ function MyProfile() {
                             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                                 <Row>
                                     <Col sm={4}>
-                                        <Nav bsStyle="pills" stacked>
-                                            <NavItem eventKey="first">Tab 1</NavItem>
-                                            <NavItem eventKey="second">Tab 2</NavItem>
+                                        <Nav bsstyle="pills" stacked='true'>
+                                            <NavItem eventkey="first">Tab 1</NavItem>
+                                            <NavItem eventkey="second">Tab 2</NavItem>
                                         </Nav>
                                     </Col>
                                 </Row>
