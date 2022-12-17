@@ -11,9 +11,10 @@ import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
 import Archive from "../Archive";
+import CoordinatorList from "../CoordinatorList";
 
-const ArchivePage = () => {
-  const pageTitle = "Archive"
+const CoordinatorListPage = () => {
+  const pageTitle = "Coordinator List"
   return(
     <div className='clear'>
         <header className="bilkent-header"> {/*Main Header*/}
@@ -49,7 +50,7 @@ const ArchivePage = () => {
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
           
-          <Archive/>
+          <CoordinatorList/>
 
         </Container>
       </Container>
@@ -62,4 +63,4 @@ const ArchivePage = () => {
   );
 };
 
-export default ArchivePage;
+export default CoordinatorListPage;

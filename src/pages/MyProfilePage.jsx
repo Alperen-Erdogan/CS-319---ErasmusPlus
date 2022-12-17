@@ -51,9 +51,11 @@ const MyProfilePage = () => {
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
           
+
           <NewApplication/>
           <Link to="/">Home</Link>
           <Link to="/archivePage">Archive Page</Link>
+          <MyProfile/>
 
         </Container>
       </Container>
