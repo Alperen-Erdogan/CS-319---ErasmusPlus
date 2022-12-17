@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 /*
 class Application {
   // Define the class constructor
@@ -20,11 +20,16 @@ class Application {
 }
 */
 
+/*
 // Create a schema for the class
 const applicationSchema = new mongoose.Schema({
   status: {type: String,
             default: "Pending"},
   applicationType:String,
+  studentName: {type: String,
+            default: "",
+            },
+  studentId: Number,
   schoolName: {type: String,
                 default:""},
   date:{type :Date,  
@@ -36,3 +41,22 @@ const applicationSchema = new mongoose.Schema({
 
 // Create a model for the class using the schema
 module.exports = mongoose.model('Application', applicationSchema);
+*/
+
+const mongoose = require('mongoose');
+
+const ApplicationSchema = new mongoose.Schema({
+  schoolName : String,
+  status: {
+    type: String,
+    required: true,
+    enum: ['Pending', 'Accepted', 'Rejected']
+  },
+  comment: {
+    type: String
+  }
+});
+
+const Application = mongoose.model('Application', ApplicationSchema);
+
+module.exports = Application;

@@ -1,5 +1,7 @@
-const mongoose = require('mongoose');
-const Application = require("./Application");
+//const mongoose = require('mongoose');
+//const Application = require("./Application");
+//const MyApplications = require("./MyApplications");
+
 /*
 class Student extends User {
     constructor(name,id,email,password,department,title,hostSchool) {
@@ -26,20 +28,50 @@ const StudentSchema = new mongoose.Schema({
 module.exports = User.discriminator('Student', StudentSchema);
 */
 
+
+
+
+
 // Define the Student schema
+/*
 const StudentSchema = new mongoose.Schema({
   name: String,
-  id:Number,
+  studentId:Number,
   email:String,
   password:String, 
   department:String,
   title:String,
+  gpa:Number,
+  
   hostSchool: {type:String,
               default:""
   },
-  applications: [Application.schema]
+  
+  applications: [Application.schema],
+  //myApplications:  MyApplications.schema
+
 
 });
+*/
 
-module.exports = mongoose.model('Student', StudentSchema);
+const mongoose = require('mongoose');
+
+const StudentSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  applications: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Application'
+  }],
+  studentId: Number
+});
+
+const Student = mongoose.model('Student', StudentSchema);
+
+module.exports = Student;
+
+
+//module.exports = mongoose.model('Student', StudentSchema);
 
