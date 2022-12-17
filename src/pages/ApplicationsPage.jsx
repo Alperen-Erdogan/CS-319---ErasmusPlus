@@ -4,14 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
-import MyProfile from "../MyProfile";
 import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
 
-const MyProfilePage = () => {
-  const pageTitle = "My Profile"
+const ApplicationsPage = () => {
+  const pageTitle = "Applications"
   return(
     <div className='clear'>
       <header className="bilkent-header"> {/*Main Header*/}
@@ -46,8 +44,6 @@ const MyProfilePage = () => {
 
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
-          
-          <MyProfile/>
 
         </Container>
       </Container>
@@ -60,4 +56,4 @@ const MyProfilePage = () => {
   );
 };
 
-export default MyProfilePage;
+export default ApplicationsPage;

@@ -20,6 +20,10 @@ import {
 } from "react-router-dom";
 import MyProfilePage from './pages/MyProfilePage';
 import ArchivePage from './pages/ArchivePage';
+import CoordinatorListPage from './pages/CoordinatorListPage';
+import ApplicationsPage from './pages/ApplicationsPage';
+import DocumentsPage from './pages/DocumentsPage';
+import SchoolPage from './pages/SchoolPage';
 
 function App() {
   const pageTitle = "My Profile";
@@ -28,7 +32,11 @@ function App() {
     <Router>
       <Switch>
         <Route exact path ="/" component = {MyProfilePage} />
-        <Route path="/ArchivePage" component={ArchivePage} />
+        <Route exact path="/ArchivePage" component={ArchivePage} />
+        <Route exact path="/ApplicationsPage" component={ApplicationsPage} />
+        <Route exact path="/DocumentsPage" component={DocumentsPage} />
+        <Route exact path="/SchoolPage" component={SchoolPage} />
+        <Route exact path="/CoordinatorListPage" component={CoordinatorListPage} />
         <Redirect to="/" />
       </Switch>
     </Router>

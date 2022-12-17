@@ -1,0 +1,48 @@
+.applIcon{
+    margin-right: 0.8vw;
+    margin-left: 1vw;
+}
+
+.applCont{
+    margin-top: 2.7vh;
+    background-color: lightgrey;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    min-height: 67vh;
+    max-height: 67vh;
+    min-width: 80vw;
+    max-width: 80vw;
+}
+
+.applInnerCont{
+    margin-top: 2.7vh;
+    background-color: lightgrey;
+    border-radius: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: center;
+    align-content: center;
+    min-height: 67vh;
+    max-height: 67vh;
+    min-width: 38vw;
+    max-width: 38vw;
+}
+
+.standardTxtInput{
+    border-radius: 5px;
+    padding: auto;
+    margin: 10px;
+    margin-top: 0px;
+    max-width: 35vw;
+}
+
+.editProfileCont{
+    background-color: lightgrey;
+    border-radius: 15px;
+    overflow-y: scroll;
+    min-height: 67vh;
+    max-height: 67vh;
+    min-width: 48vw;
+    max-width: 48vw;
+}

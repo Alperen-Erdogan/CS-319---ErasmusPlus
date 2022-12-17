@@ -1,6 +1,7 @@
 import React from 'react'
 import SidebarMenu from 'react-bootstrap-sidebar-menu';
 import { PersonCircle, FileEarmarkText, Clipboard2Fill,Clipboard2, HospitalFill, PeopleFill, ArchiveFill, FileFill, FileEarmarkBinaryFill, FileEarmarkBreakFill, BoxArrowLeft, Bank2 } from 'react-bootstrap-icons';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
@@ -16,9 +17,8 @@ const Sidebar = () => {
       </SidebarMenu.Header>
 
       <SidebarMenu.Body>
-        
         <SidebarMenu.Nav className='nav-menu , selected'>
-          <SidebarMenu.Nav.Link className='nav-link-style' >
+          <SidebarMenu.Nav.Link className='nav-link-style' href="/MyProfilePage" >
             <SidebarMenu.Nav.Icon>
               <PersonCircle size={36} />
             </SidebarMenu.Nav.Icon>
@@ -29,7 +29,7 @@ const Sidebar = () => {
         </SidebarMenu.Nav>
 
         <SidebarMenu.Nav className='nav-menu'>
-          <SidebarMenu.Nav.Link className='nav-link-style' >
+          <SidebarMenu.Nav.Link className='nav-link-style' href="/ApplicationsPage" >
             <SidebarMenu.Nav.Icon>
               <Clipboard2Fill size={36} />
             </SidebarMenu.Nav.Icon>
@@ -40,7 +40,7 @@ const Sidebar = () => {
         </SidebarMenu.Nav>
 
         <SidebarMenu.Nav className='nav-menu'>
-          <SidebarMenu.Nav.Link className='nav-link-style' >
+          <SidebarMenu.Nav.Link className='nav-link-style' href="/DocumentsPage">
             <SidebarMenu.Nav.Icon>
               <FileEarmarkBreakFill size={36} />
             </SidebarMenu.Nav.Icon>
@@ -51,7 +51,7 @@ const Sidebar = () => {
         </SidebarMenu.Nav>
 
         <SidebarMenu.Nav className='nav-menu'>
-          <SidebarMenu.Nav.Link className='nav-link-style' >
+          <SidebarMenu.Nav.Link className='nav-link-style' href="/SchoolPage" >
             <SidebarMenu.Nav.Icon>
               <Bank2 size={36} />
             </SidebarMenu.Nav.Icon>
@@ -62,7 +62,7 @@ const Sidebar = () => {
         </SidebarMenu.Nav>
 
         <SidebarMenu.Nav className='nav-menu'>
-          <SidebarMenu.Nav.Link className='nav-link-style' >
+          <SidebarMenu.Nav.Link className='nav-link-style' href="/CoordinatorListPage" >
             <SidebarMenu.Nav.Icon>
               <PeopleFill size={36} />
             </SidebarMenu.Nav.Icon>
@@ -73,7 +73,7 @@ const Sidebar = () => {
         </SidebarMenu.Nav>
 
         <SidebarMenu.Nav className='nav-menu'>
-          <SidebarMenu.Nav.Link className='nav-link-style' >
+          <SidebarMenu.Nav.Link className='nav-link-style' href="/ArchivePage" >
             <SidebarMenu.Nav.Icon>
               <ArchiveFill size={36} />
             </SidebarMenu.Nav.Icon>

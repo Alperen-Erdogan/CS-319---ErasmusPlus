@@ -4,17 +4,16 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
-import MyProfile from "../MyProfile";
 import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
+import CoordinatorList from "../CoordinatorList";
 
-const MyProfilePage = () => {
-  const pageTitle = "My Profile"
+const CoordinatorListPage = () => {
+  const pageTitle = "Coordinator List"
   return(
     <div className='clear'>
-      <header className="bilkent-header"> {/*Main Header*/}
+        <header className="bilkent-header"> {/*Main Header*/}
 <Row className='row-container-box'>
   <Col className='row-container-box'>
     <Row className='row-container-box'>
@@ -47,7 +46,7 @@ const MyProfilePage = () => {
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
           
-          <MyProfile/>
+          <CoordinatorList/>
 
         </Container>
       </Container>
@@ -60,4 +59,4 @@ const MyProfilePage = () => {
   );
 };
 
-export default MyProfilePage;
+export default CoordinatorListPage;
