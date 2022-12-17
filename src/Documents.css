@@ -1,0 +1,18 @@
+.documentIcon{
+    margin-right: 0.8vw;
+    margin-left: 1vw;
+}
+
+
+.documentCont{
+    margin-top: 2.7vh;
+    background-color: lightgrey;
+    border-radius: 15px;
+    overflow-y: scroll;
+    align-items: center;
+    align-content: center;
+    min-height: 67vh;
+    max-height: 67vh;
+    min-width: 80vw;
+    max-width: 80vw;
+}

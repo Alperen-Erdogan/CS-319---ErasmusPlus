@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import Form from 'react-bootstrap/Form';
 import pfp from './items/default-profile-photo.jpg'
-import { PersonVcard, PersonVcardFill } from 'react-bootstrap-icons/dist';
+import {PersonVcardFill} from 'react-bootstrap-icons/dist';
 
 function EditProfile() {
   return (

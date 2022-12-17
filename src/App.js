@@ -8,13 +8,16 @@ import Col from 'react-bootstrap/Col';
 import logo2 from './items/bilkent-logo.png'
 import Login from './Login'
 import MyProfile from './MyProfile';
-
+import Documents from './Documents'
+import SchoolsAndCourses from './SchoolsAndCourses';
+import CoordinatorList from './CoordinatorList';
+import  Archive from './Archive';
 
 function App() {
   const pageTitle = "My Profile";
   return (
     <div className='clear'>
-
+ 
       <header className="bilkent-header"> {/*Main Header*/}
         <Row className='row-container-box'>
           <Col className='row-container-box'>
@@ -55,7 +58,7 @@ function App() {
                   
                     Test Bilkentdasdas
                   </p>*/}
-                  <MyProfile/>
+                  <Archive/>
 
                 </Container>
               </Container>
