@@ -3,13 +3,15 @@
     padding: auto;
     margin: 10px;
     margin-top: 0px;
+    max-width: 35vw;
 }
 
 .customBtn{
     border-radius: 5px;
     padding: auto;
-    margin: 10px;
-    margin-top: 20px;
+    margin-left: 2.5vw;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
 }
 
 .editProfileCont{
