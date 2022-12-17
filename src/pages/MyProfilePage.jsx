@@ -10,6 +10,9 @@ import MyProfile from "../MyProfile";
 import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
+import Tasks from "../Tasks";
+import Applications from "../Applications";
+import NewApplication from "../NewApplication";
 
 const MyProfilePage = () => {
   const pageTitle = "My Profile"
@@ -48,7 +51,7 @@ const MyProfilePage = () => {
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
           
-          <MyProfile/>
+          <NewApplication/>
           <Link to="/">Home</Link>
           <Link to="/archivePage">Archive Page</Link>
 
