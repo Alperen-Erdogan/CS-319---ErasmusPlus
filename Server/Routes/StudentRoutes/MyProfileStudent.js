@@ -11,7 +11,7 @@ router.use(function(req,res,next){
 router
     .route("/overview")
     .get((req,res) => {
-        res.send("student/overview/")
+        res.json({"name " : "Efe"})
     })
     .post((req,res) => {
         
