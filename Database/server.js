@@ -8,7 +8,7 @@ const MyApplications = require("./MyApplications");
 const Task = require('./Task');
 const Staff = require('./Staff');
 
-const url = "mongodb+srv://Mete:mernstack@cluster0.rd7giid.mongodb.net/?retryWrites=true&w=majority";
+const url = "mongodb+srv://alperenerdogan:123456aaa@cluster0.qengqba.mongodb.net/?retryWrites=true&w=majority";
 
 // Connect to the database 
 //************************* */
@@ -43,7 +43,7 @@ async function run() {
     try{
         // Create a new student
 const student = new Student({
-    name: 'John Smith',
+    name: 'ahmet Smith',
     applications: [],
     studentId: 21806517
   });
