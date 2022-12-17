@@ -27,7 +27,7 @@ function SchoolsAndCourses() {
             </Row>
             <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
                 <Table striped hover>
-                    <thead>
+                    <thead  style = {{backgroundColor: "darkGray"}}>
                         <tr>
                         <th>Erasmus/Bilateral</th>
                         <th>Host University</th>
@@ -62,9 +62,7 @@ function SchoolsAndCourses() {
                                 </tr>
 
                             */}
-
-
-                                                
+                                
                     </tbody>
                 </Table>
             </Row>      

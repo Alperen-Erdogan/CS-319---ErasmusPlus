@@ -27,7 +27,7 @@ function CoordinatorList() {
             </Row>
             <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
                 <Table striped bordered hover>
-                    <thead style={{backgroundColor: "cyan"}}>
+                    <thead  style = {{backgroundColor: "darkGray"}}>
                         <tr>
                             <th>Faculty of Applied Sciences</th>
                             <th></th>

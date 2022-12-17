@@ -26,8 +26,8 @@ function Documents() {
                 </Form.Text>
             </Row>
             <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
-                <Table striped hover>
-                    <thead>
+                <Table striped hover >
+                    <thead style = {{backgroundColor: "darkGray"}}>
                         <tr>
                         <th></th>
                         <th>Document Name</th>
