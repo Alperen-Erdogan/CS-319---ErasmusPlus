@@ -1,8 +1,6 @@
 import React from 'react'
 import SidebarMenu from 'react-bootstrap-sidebar-menu';
-import { PersonCircle, FileEarmarkText, Clipboard2Fill,Clipboard2, HospitalFill, PeopleFill, ArchiveFill, FileFill, FileEarmarkBinaryFill, FileEarmarkBreakFill } from 'react-bootstrap-icons';
-import { Bank, Bank2 } from 'react-bootstrap-icons/dist';
-
+import { PersonCircle, FileEarmarkText, Clipboard2Fill,Clipboard2, HospitalFill, PeopleFill, ArchiveFill, FileFill, FileEarmarkBinaryFill, FileEarmarkBreakFill, BoxArrowLeft, Bank2 } from 'react-bootstrap-icons';
 
 const Sidebar = () => {
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
@@ -81,6 +79,17 @@ const Sidebar = () => {
             </SidebarMenu.Nav.Icon>
             <SidebarMenu.Nav.Title id='nav-title-style'>
               Archive
+            </SidebarMenu.Nav.Title>
+          </SidebarMenu.Nav.Link>
+        </SidebarMenu.Nav>
+
+        <SidebarMenu.Nav className='logout-nav'>
+          <SidebarMenu.Nav.Link className='nav-link-style' >
+            <SidebarMenu.Nav.Icon>
+              <BoxArrowLeft size={36} />
+            </SidebarMenu.Nav.Icon>
+            <SidebarMenu.Nav.Title id='nav-title-style'>
+              Logout
             </SidebarMenu.Nav.Title>
           </SidebarMenu.Nav.Link>
         </SidebarMenu.Nav>

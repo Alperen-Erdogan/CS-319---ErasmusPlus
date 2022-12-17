@@ -42,20 +42,22 @@ function App() {
             <Container fluid className='main-content-container'>{/*=================Contents Container================*/}
 
               <header className='page-title'> {/*Page title*/}
-                <h1 className='page-title-text'>{MyProfile.pageTitle}</h1>
+                <h1 className='page-title-text'>{pageTitle}</h1>
               </header>
 
-              <Container fluid className='content-container'>{/*Put contents in there*/ MyProfile}
-              {/*<p className='App-header'>
-                <img src={logo} className="App-logo" alt="logo" />
-                <img src={logo} className="App-logo" alt="logo" />
-                <img src={logo} className="App-logo" alt="logo" />
+              <Container fluid className='content-container'>
+                <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
+                {/*<p className='App-header'>
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <img src={logo} className="App-logo" alt="logo" />
 
-                
-                  Test Bilkentdasdas
-                </p>*/}
-                <MyProfile/>
+                  
+                    Test Bilkentdasdas
+                  </p>*/}
+                  <MyProfile/>
 
+                </Container>
               </Container>
             </Container>{/*=================end of contents========================*/}
           </Col>

@@ -56,7 +56,7 @@
 }
 
 .Bilkent-Logo{
-  width: 120px;
+  width: 110px;
   text-align: center;
   align-items: center;
   margin: 5px;
@@ -126,16 +126,21 @@
   max-height:  85vh;
   
 }
-
 .content-container{
+  padding: 20px !important;
+  padding-bottom: 0px !important;
+  height: 77vh;
+}
+
+.inner-content-container{
   background-color: #ffffff;
-  padding: 16px !important;
-  padding-left: 48px !important;
-  padding-right: 32px !important;
+  padding: 0px !important;
   margin: 0px !important;
   overflow-y: scroll;
   overflow-x: scroll;
-  max-height: 77vh;
+  height: 73vh;
+  max-height: 73vh;
+  border-radius: 10px;
 }
 
 .page-title-text{
@@ -220,4 +225,16 @@
 
 #selected{
   background-color: #D24E4E;
+}
+
+.logout-nav{
+  position: absolute;
+  bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.logout-nav:hover{
+  background-color: red !important;
 }
