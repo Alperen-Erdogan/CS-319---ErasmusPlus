@@ -31,8 +31,6 @@ router
         console.log(hostUniversity) 
         console.log(hostDepartment)
         
-        // Aplication Handler function will be called here
-
     })
 
 router
