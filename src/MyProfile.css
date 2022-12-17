@@ -49,6 +49,16 @@
   
   .profileOVCont{
     background-color: lightgrey;
-    border-radius: 5px;
+    border-radius: 15px;
+  }
+
+  .pfp{
+    max-width: 20vw;
+    max-height: 20vh;
+    margin-top: 3vh;
+    margin-left: 3vh;
   }
   
+  .pfpCol{
+    max-width: 25vw;
+  }

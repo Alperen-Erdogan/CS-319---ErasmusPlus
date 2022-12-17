@@ -102,10 +102,13 @@
 }
 
 .Bilkent-Logo{
-  width: 110px;
+  width: 12vh;
   text-align: center;
   align-items: center;
-  margin: 5px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .mini-logo{

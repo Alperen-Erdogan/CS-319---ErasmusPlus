@@ -7,8 +7,10 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import EditProfile from './EditProfile';
 import Nav from 'react-bootstrap/Nav';
+import Image from 'react-bootstrap/Image'
 import NavItem from 'react-bootstrap/NavItem';
 import Tab from 'react-bootstrap/Tab';
+import pfp from './items/default-profile-photo.jpg';
 
 
 function MyProfile() {
@@ -18,12 +20,12 @@ function MyProfile() {
         <Container fluid>
             <Row className = "profileRow">
                 <Col className='ProfileOverviewCol'> 
-                    <Container fluid className='profileOVCont'>
+                    <Container fluid className='profileOVCont' style={{maxWidth: "30vw", minWidth: "30vw"}}>
                         <Row className = 'ProfileOVFirstRow'>  
-                            <Col><img alt='Profile'/></Col>
+                            <Col className='pfpCol'><Image  src={pfp} className = "pfp" style={{borderRadius: "50%"}}/></Col>
                             <Col>
-                                <Row><Form.Text> Student name here </Form.Text></Row>    
-                                <Row><Form.Text> Student state here </Form.Text></Row>
+                                <Row style={{marginTop: "8vh"}}><Form.Text style={{fontSize: "25px", color: "black"}}> Student name here </Form.Text></Row>    
+                                <Row style={{marginTop: "1vh"}}><Form.Text style={{fontSize: "20px", color: "grey"}}> Student state here </Form.Text></Row>
                             </Col>
                         </Row>
                         <Row>

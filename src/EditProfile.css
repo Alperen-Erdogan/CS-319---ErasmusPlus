@@ -2,23 +2,38 @@
     border-radius: 5px;
     padding: auto;
     margin: 10px;
-    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .customBtn{
     border-radius: 5px;
     padding: auto;
     margin: 10px;
-    align-self: center;
     margin-top: 20px;
 }
 
 .editProfileCont{
     background-color: lightgrey;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow-y: scroll;
+    min-height: 67vh;
+    max-height: 67vh;
+    min-width: 48vw;
+    max-width: 48vw;
 }
 
 .profileOVIcon{
     margin-right: 7px;
+    margin-left: 1.5vh;
 }
+
+.pfp2{
+    max-width: 12vw;
+    max-height: 12vh;
+    margin-top: 3vh;
+    margin-left: 3vh;
+  }
+  
+  .pfpCol2{
+    max-width: 15vw;
+  }
