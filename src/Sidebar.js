@@ -17,7 +17,7 @@ const Sidebar = () => {
 
       <SidebarMenu.Body>
         
-        <SidebarMenu.Nav className='nav-menu' id='selected'>
+        <SidebarMenu.Nav className='nav-menu , selected'>
           <SidebarMenu.Nav.Link className='nav-link-style' >
             <SidebarMenu.Nav.Icon>
               <PersonCircle size={36} />

@@ -223,7 +223,7 @@
   background-color: #282c34 !important;
 }
 
-#selected{
+.selected{
   background-color: #D24E4E;
 }
 
@@ -233,8 +233,9 @@
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 10px;
+  width: 300px;
 }
 
 .logout-nav:hover{
-  background-color: red !important;
+  background-color: #af2f2f !important;
 }
