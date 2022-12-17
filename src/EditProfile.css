@@ -16,6 +16,7 @@
 .editProfileCont{
     background-color: lightgrey;
     border-radius: 5px;
+    overflow-y: scroll;
 }
 
 .profileOVIcon{
