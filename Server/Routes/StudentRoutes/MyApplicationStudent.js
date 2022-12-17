@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 "use strict"
 
+const MyAplicationDatabaseHandler = require("./../../../DatabaseHandler/MyApplicationDatabaseHandler")
+
 const express = require('express')
 let router = express.Router()
 
@@ -30,6 +32,8 @@ router
         console.log(cgpa) 
         console.log(hostUniversity) 
         console.log(hostDepartment)
+
+        let statusValue = MyAplicationDatabaseHandler(req.body)
         
     })
 
