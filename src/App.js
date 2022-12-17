@@ -20,11 +20,11 @@ function App() {
           <Col className='row-container-box'>
             <Row className='row-container-box'>
               <Container className='container-box'><img src={logo2} className="Bilkent-Logo" alt='bilkent logo'/></Container>
-              <Container className='container-box'><h1>Bilkent University | Erasmus Plus</h1></Container>
+              <Container className='container-box'><h1 id='bilkent-header-content'>Bilkent University | Erasmus Plus</h1></Container>
             </Row>
           </Col>
           <Col className='header-col'>
-            <Container className='container-box2'><h2 id='type-id'>Coordinator</h2></Container>
+            <Container className='container-box2'><p id='type-id'>User Type</p></Container>
           </Col>
         </Row>
       
@@ -42,18 +42,19 @@ function App() {
             <Container fluid className='main-content-container'>{/*=================Contents Container================*/}
 
               <header className='page-title'> {/*Page title*/}
-                <h1 className='page-title-text'>{pageTitle}</h1>
+                <h1 className='page-title-text'>{MyProfile.pageTitle}</h1>
               </header>
 
-              <Container fluid className='content-container'>{/*Put contents in there*/}
-              <p className='App-header'>
+              <Container fluid className='content-container'>{/*Put contents in there*/ MyProfile}
+              {/*<p className='App-header'>
                 <img src={logo} className="App-logo" alt="logo" />
                 <img src={logo} className="App-logo" alt="logo" />
                 <img src={logo} className="App-logo" alt="logo" />
 
                 
                   Test Bilkentdasdas
-                </p>
+                </p>*/}
+                <MyProfile/>
 
               </Container>
             </Container>{/*=================end of contents========================*/}

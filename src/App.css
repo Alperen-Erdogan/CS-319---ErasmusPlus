@@ -44,8 +44,8 @@
   display: block;
   flex-basis: 100%;
   width: 300px;
-  color: #282c34;
-  background-color: #61dafb;
+  color: #ffffff;
+  background-color: #172330;
   text-align: left;
   min-height:  500px;
   height: 100%;
@@ -93,7 +93,7 @@
 }
 
 .bilkent-header{
-  background-color: crimson;
+  background-color: #1F3143;
   padding: 10px;
   height: 15vh;
   max-height: 20vh;
@@ -128,7 +128,7 @@
 }
 
 .content-container{
-  background-color: #EBECF2;
+  background-color: #ffffff;
   padding: 16px !important;
   padding-left: 48px !important;
   padding-right: 32px !important;
@@ -159,6 +159,9 @@
 #type-id{
   text-align: right;
   align-items: right;
+  color: #ffffff;
+  font-size: 26px;
+  padding-right: 20px;
 }
 
 .container-box2{
@@ -180,4 +183,41 @@
 }
 .header-col{
   max-width: fit-content !important;
+}
+
+#bilkent-header-content{
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+#user-name{
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav-link-style{
+  padding-left: 20px;
+  color: #ffffff !important;
+  font-size: 20px !important;
+  text-decoration: none;
+}
+#nav-title-style{
+  padding-left: 10px;
+}
+
+.nav-menu{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.nav-menu:hover{
+  background-color: #282c34 !important;
+}
+
+#selected{
+  background-color: #D24E4E;
 }

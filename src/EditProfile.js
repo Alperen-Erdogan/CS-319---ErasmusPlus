@@ -5,6 +5,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import { PersonVcard, PersonVcardFill } from 'react-bootstrap-icons/dist';
 
 function EditProfile() {
   return (
@@ -12,8 +13,8 @@ function EditProfile() {
        <Container fluid className = 'editProfileCont'>
             <Row>
                 <Form.Text className="ProfileInfo">
-                    <img alt= 'profile overview icon'/>
-                    Profile Information
+                    <PersonVcardFill size={30} className = 'profileOVIcon'/>
+                    Profile Information 
                 </Form.Text>
             </Row>
             <Row>
