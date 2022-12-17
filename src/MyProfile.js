@@ -11,6 +11,8 @@ import Image from 'react-bootstrap/Image'
 import NavItem from 'react-bootstrap/NavItem';
 import Tab from 'react-bootstrap/Tab';
 import pfp from './items/default-profile-photo.jpg';
+import Tasks from "./Tasks.js"
+import {Clipboard2Fill} from 'react-bootstrap-icons/dist';
 
 
 function MyProfile() {
@@ -27,18 +29,6 @@ function MyProfile() {
                                 <Row style={{marginTop: "8vh"}}><Form.Text style={{fontSize: "25px", color: "black"}}> Student name here </Form.Text></Row>    
                                 <Row style={{marginTop: "1vh"}}><Form.Text style={{fontSize: "20px", color: "grey"}}> Student state here </Form.Text></Row>
                             </Col>
-                        </Row>
-                        <Row>
-                            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                                <Row>
-                                    <Col sm={4}>
-                                        <Nav bsStyle="pills" stacked>
-                                            <NavItem eventKey="first">Tab 1</NavItem>
-                                            <NavItem eventKey="second">Tab 2</NavItem>
-                                        </Nav>
-                                    </Col>
-                                </Row>
-                            </Tab.Container>
                         </Row>
                     </Container>
                 </Col>

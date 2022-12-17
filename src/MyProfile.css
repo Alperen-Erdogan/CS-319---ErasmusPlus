@@ -56,9 +56,11 @@
     max-width: 20vw;
     max-height: 20vh;
     margin-top: 3vh;
-    margin-left: 3vh;
+    margin-left: 1vw;
+    margin-bottom: 3vh;
   }
   
   .pfpCol{
     max-width: 25vw;
   }
+
