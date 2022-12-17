@@ -3,20 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Link } from "react-router-dom";
 
-
-import MyProfile from "../MyProfile";
 import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
-import Archive from "../Archive";
 
-const ArchivePage = () => {
-  const pageTitle = "Archive"
+const ApplicationsPage = () => {
+  const pageTitle = "Applications"
   return(
     <div className='clear'>
-        <header className="bilkent-header"> {/*Main Header*/}
+      <header className="bilkent-header"> {/*Main Header*/}
 <Row className='row-container-box'>
   <Col className='row-container-box'>
     <Row className='row-container-box'>
@@ -48,8 +44,6 @@ const ArchivePage = () => {
 
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
-          
-          <Archive/>
 
         </Container>
       </Container>
@@ -62,4 +56,4 @@ const ArchivePage = () => {
   );
 };
 
-export default ArchivePage;
+export default ApplicationsPage;
