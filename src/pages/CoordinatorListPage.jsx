@@ -3,14 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Link } from "react-router-dom";
 
-
-import MyProfile from "../MyProfile";
 import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
-import Archive from "../Archive";
 import CoordinatorList from "../CoordinatorList";
 
 const CoordinatorListPage = () => {

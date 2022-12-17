@@ -3,16 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Link } from "react-router-dom";
 
 
 import MyProfile from "../MyProfile";
 import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
-import Tasks from "../Tasks";
-import Applications from "../Applications";
-import NewApplication from "../NewApplication";
 
 const MyProfilePage = () => {
   const pageTitle = "My Profile"
@@ -51,10 +47,6 @@ const MyProfilePage = () => {
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
           
-
-          <NewApplication/>
-          <Link to="/">Home</Link>
-          <Link to="/archivePage">Archive Page</Link>
           <MyProfile/>
 
         </Container>
