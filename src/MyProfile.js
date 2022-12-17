@@ -30,6 +30,19 @@ function MyProfile() {
                                 <Row style={{marginTop: "1vh"}}><Form.Text style={{fontSize: "20px", color: "grey"}}> Student state here </Form.Text></Row>
                             </Col>
                         </Row>
+
+                        <Row>
+                            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                                <Row>
+                                    <Col sm={4}>
+                                        <Nav bsstyle="pills" stacked='true'>
+                                            <NavItem eventkey="first">Tab 1</NavItem>
+                                            <NavItem eventkey="second">Tab 2</NavItem>
+                                        </Nav>
+                                    </Col>
+                                </Row>
+                            </Tab.Container>
+                        </Row>
                     </Container>
                 </Col>
                 <Col className = 'ProfileEditCol'>

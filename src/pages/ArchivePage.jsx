@@ -29,7 +29,7 @@ const ArchivePage = () => {
 
 </header>
 
-<Container fluid disableGutters={true}>{/*Main Container*/}
+<Container fluid>{/*Main Container*/}
 <Row> {/*Main Row*/}
 
   <Col className='coltest1'> {/*Navbar column*/}
