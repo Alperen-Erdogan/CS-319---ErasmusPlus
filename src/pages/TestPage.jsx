@@ -8,7 +8,7 @@ import "../App.css";
 import "../test.css";
 import logo2 from '../items/bilkent-logo.png';
 import Sidebar from '../Sidebar';
-import Test from "../test";
+import Test from "../Test";
 
 const TestPage = () => {
   const pageTitle = "Test Page"
