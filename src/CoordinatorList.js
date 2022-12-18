@@ -2,10 +2,17 @@ import './CoordinatorList.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import React from 'react';
-import TableData from './components/table-items.json'
-import { useState } from 'react'
-import Table from 'react-bootstrap/Table';
-import { People, PeopleFill } from 'react-bootstrap-icons';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import EditProfile from './EditProfile';
+import Nav from 'react-bootstrap/Nav';
+import Image from 'react-bootstrap/Image'
+import NavItem from 'react-bootstrap/NavItem';
+import Tab from 'react-bootstrap/Tab';
+import {Bank2, FileEarmarkBreakFill, PeopleFill} from 'react-bootstrap-icons/dist';
+import { Table } from 'react-bootstrap';
+
 
 function CoordinatorList() {
 
@@ -20,11 +27,16 @@ function CoordinatorList() {
     }, []) // Execute one time only
 
     const pageTitle = "Coordinator List";
-    const [contacts, setContacts] = useState(TableData)
-    return (
-        <div>
-            <header><h3> <People size={42}/><span>Coordinators</span></h3></header>
-            <div className='main-table'>
+  return (
+    <div>   
+        <Container fluid className = 'coorCont'>
+            <Row>
+                <Form.Text style={{padding: "1.2vh"}}>
+                    <PeopleFill size={30} className = 'coorIcon'/>
+                    Coordinators
+                </Form.Text>
+            </Row>
+            <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
                 <Table striped bordered hover>
                     <thead  style = {{backgroundColor: "darkGray"}}>
                         <tr>
@@ -33,18 +45,33 @@ function CoordinatorList() {
                         </tr>
                     </thead>
                     <tbody>
-                        {contacts.map((contact)=> 
-                            <tr>
-                                <td className='table-departmant'>{contact.Departmant}</td>
-                                <td className='table-coordinator'>{contact.Coordinator}</td>
-                            </tr>
-                        )}
-                        
+                        <tr>
+                            <th>faculty 1</th>
+                            <th>name 1</th>
+                        </tr>
+                        <tr>
+                            <th>faculty 2</th>
+                            <th>name 2</th>   
+                        </tr>
+
+                            {/*table row template 
+                                
+                                <tr>
+                                    <th>faculty</th>
+                                    <th>name</th>
+                                    
+                                </tr>
+
+                            */}
+
+
+                                                
                     </tbody>
                 </Table>
-            </div>
-        </div>
-    );
+            </Row>      
+        </Container>
+    </div> 
+  );
 }
 
 export default CoordinatorList;
