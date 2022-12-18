@@ -6,9 +6,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import logo2 from './items/bilkent-logo.png';
+import { Redirect } from 'react-router';
 
 import {useState, useEffect} from 'react';
-
+//import useNavigate from "react"
 import axios from 'axios'
 
 // All the request will be sended here
@@ -24,6 +25,12 @@ const validEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-
 
 function Login() {
 
+    useEffect(() => {
+        localStorage.setItem("authenticated", false)
+        setAuthenticated(false)
+      }, []);
+
+    //const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("")
 
@@ -39,18 +46,20 @@ function Login() {
        
     } 
 
-   
-
     const submit = (e) =>{
 
         if(!email.match(validEmailRegex)){
             console.log("Not Valid Mail Address")
         }
         handleSubmit()
-            .then(res => console.log(res.data.token))
+            .then(res => {
+                console.log(res.data.token)
+                console.log(res.data.message)
+                setAuthenticated(true) // It shows that it is authenticated
+                localStorage.setItem("authenticated", true)
+            })
             .catch(error => console.log(error))
     }
-
 
   return(
     <div>

@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
+import { useMemo } from "react";
 
 const Dashboard = () => {
-        const [authenticated, setauthenticated] = useState(null);
-    useEffect(() => {
-    const loggedInUser = localStorage.getItem("authenticated");
-    if (loggedInUser) {
-    setauthenticated(loggedInUser);
-    }
-    }, []);
+    
+    console.log(typeof(localStorage.getItem("authenticated")))
 
-    if (!authenticated) {
-        return <Redirect replace to="/TestPage" />;
-    } else {
+    if ((localStorage.getItem("authenticated")) === "false") {
+        console.log("JKALDSFHKJFDASHFDSJKAHFDSAHJKDFSAHJKFDSAHJK")
+        return <Redirect replace to="/" />;
+    } 
+    
+    if(localStorage.getItem("authenticated") === "true"){
+        console.log("asdklsajdm,xcmznxc,mcm,nasmd,.w@@@@")
         return (
-            <div>
-                <p>Welcome to your Dashboard</p>
-            </div>
+
+                <Redirect replace to="/MyProfilePage" />
         );
     }
+    
 };
 
 export default Dashboard;
