@@ -141,7 +141,7 @@ app.post("/register", (request, response) => {
         const user = new User({
           email: request.body.email,
           password: hashedPassword,
-          name: "Hasan"
+          name: request.body.email
         });
 
         console.log(user)

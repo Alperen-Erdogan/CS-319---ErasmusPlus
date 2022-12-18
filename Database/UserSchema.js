@@ -16,11 +16,9 @@ const userSchema = new mongoose.Schema({
     name: {
         type: String,
         unique : false,
-        default: "Hasan"
-    }
+    },
 
-
-
+    
 })
 
 module.exports = mongoose.model.Users || mongoose.model("Users", userSchema)

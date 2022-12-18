@@ -31,6 +31,7 @@ function Register() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("")
+    const [bilkent, setBilkentId] = useState(0)
 
     function submit(){
 
