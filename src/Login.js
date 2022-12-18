@@ -6,10 +6,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import logo2 from './items/bilkent-logo.png';
-import { Redirect } from 'react-router';
+import { useHistory } from "react-router-dom";
 
 import {useState, useEffect} from 'react';
-//import useNavigate from "react"
+import Redirect from "react-router-dom"
 import axios from 'axios'
 
 // All the request will be sended here
@@ -22,8 +22,8 @@ const validEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-
 /*
     Loginc classes will be
 */
-
 function Login() {
+    let history = useHistory();
 
     useEffect(() => {
         localStorage.setItem("authenticated", false)
@@ -57,6 +57,7 @@ function Login() {
                 console.log(res.data.message)
                 setAuthenticated(true) // It shows that it is authenticated
                 localStorage.setItem("authenticated", true)
+                history.push('/Dashboard')
             })
             .catch(error => console.log(error))
     }

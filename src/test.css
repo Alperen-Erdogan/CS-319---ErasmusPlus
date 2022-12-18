@@ -6,3 +6,14 @@ main {
     justify-content: center;
     min-height: 100vh;
   }
+
+  .table-div{
+    margin: 30px;
+  }
+
+  .test-table{
+    border-radius: 100px;
+  }
+  .head-table{
+    background-color: aqua;
+  }
