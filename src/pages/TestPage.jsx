@@ -9,7 +9,6 @@ import "../test.css";
 import logo2 from '../items/bilkent-logo.png';
 import Sidebar from '../Sidebar';
 import Test from "../Test";
-import TableCraft from "../components/TableCraft";
 
 const TestPage = () => {
   const pageTitle = "Test Page"
@@ -48,7 +47,7 @@ const TestPage = () => {
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
           
-          <TableCraft/>
+          <Test/>
 
         </Container>
       </Container>

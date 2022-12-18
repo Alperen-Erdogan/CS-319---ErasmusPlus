@@ -50,8 +50,7 @@ function App() {
     {
     <Router>
       <Switch>
-        <Route exact path ="/" component={MyProfilePage}/>
-        <Route exact path ="/Login" component={Login}/>
+        <Route exact path ="/" component={Login}/>
         <Route exact path ="/Dashboard" component={Dashboard}/>
         <Route exact path ="/TestTable" component={TestTable}/>
         <Route exact path ="/Register" component={Register}/>
