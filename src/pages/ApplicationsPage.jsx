@@ -8,6 +8,8 @@ import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
 import Tasks from "../Tasks";
+import Applications from "../Applications";
+
 
 const ApplicationsPage = () => {
   const pageTitle = "Applications"
@@ -46,9 +48,7 @@ const ApplicationsPage = () => {
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
 
-          <Tasks/>
-
-          
+          <Applications/>
 
         </Container>
       </Container>
