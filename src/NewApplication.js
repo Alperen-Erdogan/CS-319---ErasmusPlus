@@ -26,28 +26,43 @@ function NewApplication() {
                             </Form.Text>
                         </Row>
                         <Row>
-                        <Form>
-                        <Form.Group as = {Row} className = "standardTxtInput">
-                            <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
-                            <Col className = "editProfileCol"><Form.Control placeholder = "Current Semester Date" style = {{maxWidth: "60vw", minWidth: "60vw"}}/></Col>
-                        </Form.Group>
-                        </Form>
+                            <Form>
+                                <Form.Group as = {Row} className = "standardTxtInput">
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "60vw", minWidth: "60vw"}}/></Col>
+                                </Form.Group>
+                                <Form.Group as = {Row} className = "standardTxtInput">
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "60vw", minWidth: "60vw"}}/></Col>
+                                </Form.Group>
+                                <Form.Group as = {Row} className = "standardTxtInput">
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "25vw", minWidth: "25'vw"}}/></Col>
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                                </Form.Group>
+                                <Form.Group as = {Row} className = "standardTxtInput">
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                                </Form.Group>
+                                <Form.Group as = {Row} className = "standardTxtInput">
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "25'vw", minWidth: "25vw"}}/></Col>
+                                </Form.Group>
+                                <Form.Group as = {Row} className = "standardTxtInput">
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                                    <Col className = "editProfileCol"><Form.Label>Application:</Form.Label></Col>
+                                    <Col className = "editProfileCol"><Form.Control type = "email" placeholder = "Current Semester Date" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                                </Form.Group>
+                            </Form>
                         </Row>
                         
-                        <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
-                            <Col>
-                            </Col>
-                        </Row>
                         
-                        <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
-                            <Col>
-                            </Col>
-                        </Row>
-                        
-                        <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
-                            <Col>
-                            </Col>
-                        </Row>
         </Container>
     </div> 
   );

@@ -31,18 +31,6 @@ function MyProfile() {
                             </Col>
                         </Row>
 
-                        <Row>
-                            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                                <Row>
-                                    <Col sm={4}>
-                                        <Nav bsstyle="pills" stacked='true'>
-                                            <NavItem eventkey="first">Tab 1</NavItem>
-                                            <NavItem eventkey="second">Tab 2</NavItem>
-                                        </Nav>
-                                    </Col>
-                                </Row>
-                            </Tab.Container>
-                        </Row>
                     </Container>
                 </Col>
                 <Col className = 'ProfileEditCol'>
