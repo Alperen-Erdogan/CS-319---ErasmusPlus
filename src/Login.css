@@ -10,8 +10,8 @@
     border-radius: 15px;
     align-self: center;
     padding: 5vh;
-    padding-bottom: 4vh;
-    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-top: 0vh;
     max-width: 25vw;
     min-width: 25vw;
 }

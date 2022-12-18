@@ -16,7 +16,8 @@
     padding: 32px;
     height: 70vh;
     width: 80vw;
-    background-color: #ffffff;    
+    background-color: #ffffff;
+    border-radius: 10px;  
 }
 
 .popup-inner .close-btn{

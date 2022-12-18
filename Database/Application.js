@@ -47,16 +47,19 @@ const mongoose = require('mongoose');
 
 const ApplicationSchema = new mongoose.Schema({
   schoolName : String,
+  semester: {type:String,
+    requied: true},
   status: {
     type: String,
     required: true,
-    enum: ['Pending', 'Accepted', 'Rejected']
+    enum: ["Pending", "Accepted", "Rejected"],
+    default: "Pending"
   },
   comment: {
     type: String
   }
 });
 
-const Application = mongoose.model('Application', ApplicationSchema);
+const Application = mongoose.model("Application", ApplicationSchema);
 
 module.exports = Application;

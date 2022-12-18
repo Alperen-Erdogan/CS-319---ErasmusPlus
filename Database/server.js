@@ -7,7 +7,7 @@ const Application = require("./Application");
 const MyApplications = require("./MyApplications");
 const Task = require('./Task');
 const Staff = require('./Staff');
-
+const Archieve = require("./Archieve");
 const url = "mongodb+srv://alperenerdogan:123456aaa@cluster0.qengqba.mongodb.net/?retryWrites=true&w=majority";
 
 // Connect to the database 
@@ -55,13 +55,13 @@ const student = new Student({
 
 
   const application = await Application.create({
-    schoolName: 'Manchester University',
-    status: 'Pending'
+    schoolName: "Manchester University",
+    semester : "2022 Fall"
   });
 
   const application2 = await Application.create({
-    schoolName: 'Kiev University',
-    status: 'Pending'
+    schoolName: "Kiev University",
+    semester : "2022 Fall"
   });
 
   // Insert the application into the student's applications array
@@ -109,6 +109,23 @@ const student = new Student({
         .catch(error => console.error(error));
     })
 
+    const archieve_application = await Application.create({
+      schoolName: "Paris University",
+      semester : "2022 Spring",
+      status: "Rejected"
+    });
+  
+    const archieve_application2 = await Application.create({
+      schoolName: "London University",
+      semester : "2020 Fall",
+      status: "Rejected"
+    });
+
+  // Get application from 2020 Fall 
+  const archieve = new Archieve();
+  archieve.getArchieveApplications("2020 Fall")   
+ .then(application => console.log(application))
+  .catch(error => console.error(error));
     
     /*
     const myApplications = await  MyApplications.create({studentId: 21801365});

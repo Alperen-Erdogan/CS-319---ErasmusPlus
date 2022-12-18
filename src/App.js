@@ -27,6 +27,7 @@ import NewApplicationPage from './pages/NewApplicationPage';
 import TestPage from './pages/TestPage';
 import Register from './Register';
 import Login from './Login';
+import Dashboard from './Dashboard';
 
 function App() {
   const pageTitle = "My Profile";
@@ -36,6 +37,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path ="/" component={Login}/>
+        <Route exact path ="/Dashboard" component={Dashboard}/>
         <Route exact path ="/Register" component={Register}/>
         <Route exact path ="/MyProfilePage" component = {MyProfilePage} />
         <Route exact path="/ArchivePage" component={ArchivePage} />
