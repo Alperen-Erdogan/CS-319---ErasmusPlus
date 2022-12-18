@@ -2,24 +2,38 @@
     border-radius: 5px;
     padding: auto;
     margin: 10px;
-    margin-top: 0px;
+    margin-top: 4vh;
 }
 
 .loginCont{
     background-color: lightgray;
     border-radius: 10px;
     align-self: center;
-    max-width: auto;
-    padding: 50px;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding: 5vh;
+    padding-top: 2vh;
+    max-width: 30vw;
+    min-width: 30vw;
 }
+
+.loginCont2{
+    background-color: white;
+    border-radius: 10px;
+    align-self: center;
+    padding: 5vh;
+    padding-top: 15vh;
+    max-width: 40vw;
+    min-width: 40vw;
+}
+
 .customBtn{
     border-radius: 5px;
-    padding: auto;
-    margin: 10px;
-    margin-top: 5px;
-    align-self: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 20px;
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+    margin: 0vh;
+    margin-top: 3vh;
 }
 
 .loginMain{
@@ -34,6 +48,19 @@
     width: auto;
     box-sizing: border-box;
     display: block;
+    font-size: 20px;
+ 
 }
+
+.Bilkent-Logo-login{
+    width: 12vh;
+    text-align: center;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  
 
 

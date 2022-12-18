@@ -5,6 +5,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import logo2 from './items/bilkent-logo.png';
 
 import {useState, useEffect} from 'react';
 
@@ -68,15 +69,31 @@ function Login() {
 
   return(
     <div>
+        <Container className = 'loginCont2'>
+            <Row>
+                    <Col style={{maxWidth: "10vw", marginLeft: "1.5vw"}}>
+                        <img src={logo2} className="Bilkent-Logo-login" alt='bilkent logo'/>
+                    </Col>
+                    <Col>
+                        <Row>
+                            <Form.Text style={{fontSize:"60px", fontWeight: "bold"}}>Bilkent University</Form.Text>
+                        </Row>
+                        <Row> 
+                            <Form.Text style={{fontSize:"25px", fontWeight: "bold"}}>ErasmusPlus</Form.Text>
+                        </Row>
+                    </Col>
+                </Row>   
+            </Container>
         <Container className = 'loginCont'>
+
             <Form>
                 <Form.Group as = {Row} controlId="formBasicEmail">
-                    <Col className = "loginCol"><Form.Label>Email</Form.Label></Col>
+                    <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Email</Form.Label></Col>
                     <Col className = "loginCol"><Form.Control className = "standardTxtInput" type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "loginCol"><Form.Label>Password</Form.Label></Col>
+                    <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Password</Form.Label></Col>
                     <Col className = "loginCol"><Form.Control className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
                 </Form.Group>
                 <Button variant="primary" className = "customBtn" onClick={() => {submit()}} href={href} >
