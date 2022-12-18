@@ -14,8 +14,8 @@ import {Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons
 import { Table } from 'react-bootstrap';
 
 
-function OpenedTask() {
-    const pageTitle = "Opened Task";
+function OpenedApplication() {
+    const pageTitle = "Opened Application";
   return (
     <div>   
         <Container fluid className = 'NewApplCont'>
@@ -58,17 +58,13 @@ function OpenedTask() {
                     </Form.Group>
                 </Form>
             </Row>
-            <Row style={{maxWidth: "75vw", minWidth: "75vw"}}>
+            <Row>
                 <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}>Return</Button></Col>
-                <Col style={{paddingLeft: "46.5vw"}}>
-                    <Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "red", marginLeft: "0vw"}}>Reject</Button>
-                    <Button style={{paddingLeft: "0.5vw", paddingRight: "0.5vw", paddingBottom: "0.8vh", backgroundColor: "green", marginLeft: "1vw"}}>Approve</Button>
-                </Col>
-                <Col style={{paddingLeft: "0vw"}}></Col>
+                <Col style={{paddingLeft: "52.5vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "red"}}>Cancel</Button></Col>
             </Row>               
         </Container>
     </div> 
   );
 }
 
-export default OpenedTask;
+export default OpenedApplication;
