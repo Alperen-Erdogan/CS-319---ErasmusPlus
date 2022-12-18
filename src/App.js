@@ -31,6 +31,7 @@ function App() {
   const pageTitle = "My Profile";
   return (
     <>
+    {/*
     <Router>
       <Switch>
         <Route exact path ="/" component = {MyProfilePage} />
@@ -44,7 +45,12 @@ function App() {
         <Redirect to="/" />
       </Switch>
     </Router>
+    */}
+
+    <Login></Login>
+
     </>
+    
   );
 }
 
