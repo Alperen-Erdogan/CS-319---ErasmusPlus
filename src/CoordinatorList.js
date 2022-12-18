@@ -13,9 +13,55 @@ import Tab from 'react-bootstrap/Tab';
 import {Bank2, FileEarmarkBreakFill, PeopleFill} from 'react-bootstrap-icons/dist';
 import { Table } from 'react-bootstrap';
 
+import axios from 'axios'
+import { useEffect } from 'react';
+import { useState } from 'react';
+
+const api = axios.create()
+
 
 function CoordinatorList() {
+
+    const [dataTable, setDataTable] = useState([])
+    const [facultyName, setFacultyName] = useState([]) // They might not be array
+
+    useEffect(() => {
+        api.post("http://localhost:5000/StudentCoordinator/",{})
+        .then(res => console.log(res.data.dataTable))
+        .then(res => console.log("alkjsdsakl"))
+        .catch(e => console.log(e))
+    }, []) // Execute one time only
+
     const pageTitle = "Coordinator List";
+
+
+    const column = [
+        {heading: "Faculty Name", value: "facultyName"},
+        {heading: "Coordinator Name", value: "coordinatorName"}
+    ]
+
+    return (
+    <div>   
+        <Container fluid className = 'coorCont'>
+            <Row>
+                <Form.Text style={{padding: "1.2vh"}}>
+                    <PeopleFill size={30} className = 'coorIcon'/>
+                    Coordinators
+                </Form.Text>
+            </Row>
+            <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
+                <Table striped bordered hover>
+                    <thead  style = {{backgroundColor: "darkGray"}}>
+                        
+                    </thead>
+                </Table>
+            </Row>      
+        </Container>
+    </div> )
+
+
+
+    /*
   return (
     <div>   
         <Container fluid className = 'coorCont'>
@@ -51,7 +97,7 @@ function CoordinatorList() {
                                     
                                 </tr>
 
-                            */}
+                            }
 
 
                                                 
@@ -60,7 +106,9 @@ function CoordinatorList() {
             </Row>      
         </Container>
     </div> 
+    
   );
+  */
 }
 
 export default CoordinatorList;
