@@ -12,24 +12,37 @@ import NavItem from 'react-bootstrap/NavItem';
 import Tab from 'react-bootstrap/Tab';
 import {Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons/dist';
 import { Table } from 'react-bootstrap';
+import './test.css';
+import Popup from './components/Popup';
+import { useState } from 'react';
+import NewApplication from './NewApplication';
 
 
 function Applications() {
+  const [buttonPopup, setButtonPopup] = useState(false);
+      
     const pageTitle = "Applications";
   return (
     <div>   
       <Container fluid className = 'applCont'>
-        <Row>
-          <Form.Text style={{padding: "1.2vh", fontSize: "25px"}}>
-              <Clipboard2Fill size={30} className = 'applIcon'/>
-              My Applications
-              <Button style = {{paddingLeft: "1.5vw", paddingRight: "1.5vw", paddingBottom: "0.5vh", paddingTop: "0.5vh", marginLeft: "55vw", fontSize: "25px"}}>
-                New Application</Button>
-          </Form.Text>
-        </Row>
-        <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "38vw", minWidth: "38vw", marginLeft: "1vw"}}>
-                        
-        </Row>
+              
+              
+              <div>
+                <main>
+                  <Row>
+                    <Col>
+                      <span className='myapplication-span'><Clipboard2Fill size={30} className = 'applIcon'/>  My Applications</span>
+                    </Col>
+                    <Col className='newapp-col'>
+                      <span className='button-span'><button onClick={() => setButtonPopup(true)}>New Application</button> </span>
+                    </Col>
+                  </Row>
+                </main>
+                <Popup trigger={buttonPopup} setTrigger = {setButtonPopup}>
+                  <NewApplication/>
+                </Popup>
+                
+              </div>
     
       </Container>
     </div> 
