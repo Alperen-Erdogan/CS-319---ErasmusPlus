@@ -60,11 +60,10 @@ function OpenedTask() {
             </Row>
             <Row style={{maxWidth: "75vw", minWidth: "75vw"}}>
                 <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}>Return</Button></Col>
-                <Col style={{paddingLeft: "46.5vw"}}>
+                <Col style={{paddingLeft: "43.3vw"}}>
                     <Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "red", marginLeft: "0vw"}}>Reject</Button>
                     <Button style={{paddingLeft: "0.5vw", paddingRight: "0.5vw", paddingBottom: "0.8vh", backgroundColor: "green", marginLeft: "1vw"}}>Approve</Button>
                 </Col>
-                <Col style={{paddingLeft: "0vw"}}></Col>
             </Row>               
         </Container>
     </div> 
