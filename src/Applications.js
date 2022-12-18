@@ -18,21 +18,20 @@ function Applications() {
     const pageTitle = "Applications";
   return (
     <div>   
-        <Container fluid className = 'applCont'>
-          
-                        <Row>
-                            <Form.Text style={{padding: "1.2vh", fontSize: "25px"}}>
-                                <Clipboard2Fill size={30} className = 'applIcon'/>
-                                My Applications
-                                <Button style = {{paddingLeft: "1.5vw", paddingRight: "1.5vw", paddingBottom: "0.5vh", paddingTop: "0.5vh", marginLeft: "55vw", fontSize: "25px"}}>
-                                    New Application</Button>
-                            </Form.Text>
-                        </Row>
-                        <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "38vw", minWidth: "38vw", marginLeft: "1vw"}}>
+      <Container fluid className = 'applCont'>
+        <Row>
+          <Form.Text style={{padding: "1.2vh", fontSize: "25px"}}>
+              <Clipboard2Fill size={30} className = 'applIcon'/>
+              My Applications
+              <Button style = {{paddingLeft: "1.5vw", paddingRight: "1.5vw", paddingBottom: "0.5vh", paddingTop: "0.5vh", marginLeft: "55vw", fontSize: "25px"}}>
+                New Application</Button>
+          </Form.Text>
+        </Row>
+        <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "38vw", minWidth: "38vw", marginLeft: "1vw"}}>
                         
-                        </Row>
+        </Row>
     
-        </Container>
+      </Container>
     </div> 
   );
 }
