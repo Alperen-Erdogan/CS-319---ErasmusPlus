@@ -10,7 +10,7 @@ import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image'
 import NavItem from 'react-bootstrap/NavItem';
 import Tab from 'react-bootstrap/Tab';
-import {Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons/dist';
+import {ArrowLeft, Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons/dist';
 import { Table } from 'react-bootstrap';
 
 
@@ -59,7 +59,7 @@ function OpenedApplication() {
                 </Form>
             </Row>
             <Row>
-                <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}>Return</Button></Col>
+                <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}><ArrowLeft/></Button></Col>
                 <Col style={{paddingLeft: "52.5vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "red"}}>Cancel</Button></Col>
             </Row>               
         </Container>

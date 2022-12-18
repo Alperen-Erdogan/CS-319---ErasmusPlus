@@ -10,7 +10,7 @@ import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image'
 import NavItem from 'react-bootstrap/NavItem';
 import Tab from 'react-bootstrap/Tab';
-import {Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons/dist';
+import {ArrowLeft, ArrowReturnLeft, ArrowReturnRight, Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons/dist';
 import { Table } from 'react-bootstrap';
 
 
@@ -59,7 +59,7 @@ function OpenedTask() {
                 </Form>
             </Row>
             <Row style={{maxWidth: "75vw", minWidth: "75vw"}}>
-                <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}>Return</Button></Col>
+                <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}><ArrowLeft/></Button></Col>
                 <Col style={{paddingLeft: "43.3vw"}}>
                     <Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "red", marginLeft: "0vw"}}>Reject</Button>
                     <Button style={{paddingLeft: "0.5vw", paddingRight: "0.5vw", paddingBottom: "0.8vh", backgroundColor: "green", marginLeft: "1vw"}}>Approve</Button>

@@ -47,7 +47,7 @@ const NewApplicationPage = () => {
 
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
-          <OpenedTask/>
+          <NewApplication/>
         </Container>
       </Container>
     </Container>{/*=================end of contents========================*/}
