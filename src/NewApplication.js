@@ -13,9 +13,41 @@ import Tab from 'react-bootstrap/Tab';
 import {ArrowLeft, Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons/dist';
 import { Table } from 'react-bootstrap';
 
+import { useEffect, useState } from 'react';
+
+import axios from "axios"
+
+const api = axios.create({
+    baseURL: "http://localhost:5000/MyApplicationStudent"
+})
+
+
 
 function NewApplication() {
+    
+    let handleSubmit = async(obj) => {
+        try{
+            let res = await api.post("/newApplication", {obj} )
+        }catch(e){
+            console.log("error")
+        }
+    }
+
+    const create = () => {
+        let application = {"firstName" : firstName, "lastName" : lastName, "department" : department, "cgpa": cgpa, "hostUniversity" : hostUniversity, "hostDepartment" : hostDepartment}
+        handleSubmit(application)
+    }
+    
     const pageTitle = "New Application";
+
+    const [currentSemesterDate, setSemesterDate] = useState("")
+    const [firstName, setFirstName] = useState("")
+    const [lastName, setLastName] = useState("")
+    const [department, setDepartment] = useState("")
+    const [cgpa, setCgpa] = useState(0.0)
+    const [hostUniversity, setHostUniversity] = useState("")
+    const [hostDepartment, setHostDepartment] = useState("")
+
   return (
     <div>   
         <Container fluid className = 'NewApplCont'>
@@ -33,21 +65,21 @@ function NewApplication() {
                     </Form.Group>
                     <Form.Group as = {Row} className = "standardTxtInput">
                         <Col style={{paddingTop: "0.5vh"}}><Form.Label>First Name:</Form.Label></Col>
-                        <Col><Form.Control type = "email" placeholder = "First Name" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                        <Col><Form.Control onChange={e => setFirstName(e.target.value)} type = "email" placeholder = "First Name" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
                         <Col style={{paddingTop: "0.5vh"}}><Form.Label>Department:</Form.Label></Col>
-                        <Col><Form.Control type = "email" placeholder = "Department" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                        <Col><Form.Control onChange={e => setDepartment(e.target.value)} type = "email" placeholder = "Department" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
                     </Form.Group>
                     <Form.Group as = {Row} className = "standardTxtInput">
                         <Col style={{paddingTop: "0.5vh"}}><Form.Label>Last Name:</Form.Label></Col>
-                        <Col><Form.Control type = "email" placeholder = "Last Name" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                        <Col><Form.Control onChange={e => setLastName(e.target.value)} type = "email" placeholder = "Last Name" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
                         <Col style={{paddingTop: "0.5vh"}}><Form.Label>CGPA:</Form.Label></Col>
-                        <Col><Form.Control type = "email" placeholder = "CGPA" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                        <Col><Form.Control onChange={e => setCgpa(e.target.value)}type = "email" placeholder = "CGPA" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
                     </Form.Group>
                     <Form.Group as = {Row} className = "standardTxtInput">
                         <Col style={{paddingTop: "0.5vh"}}><Form.Label>Host University:</Form.Label></Col>
-                        <Col><Form.Control type = "email" placeholder = "Host University" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
+                        <Col><Form.Control onChange={e => setHostUniversity(e.target.value)} type = "email" placeholder = "Host University" style = {{maxWidth: "25vw", minWidth: "25vw"}}/></Col>
                         <Col style={{paddingTop: "0.5vh"}}><Form.Label>Host Department:</Form.Label></Col>
-                        <Col><Form.Control type = "email" placeholder = "Host Department" style = {{maxWidth: "25'vw", minWidth: "25vw"}}/></Col>
+                        <Col><Form.Control onChange={e => setHostDepartment(e.target.value)}type = "email" placeholder = "Host Department" style = {{maxWidth: "25'vw", minWidth: "25vw"}}/></Col>
                     </Form.Group>
                     <Form.Group as = {Row} className = "standardTxtInput">
                         <Form.Text style = {{paddingLeft: "20vw", paddingRight: "20vw", color: "black"}}>Please upload the documents you downloaded and filled from the Documents section. </Form.Text>
@@ -60,7 +92,7 @@ function NewApplication() {
             </Row>
             <Row>
                 <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}><ArrowLeft/></Button></Col>
-                <Col style={{paddingLeft: "52.5vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "green"}}>Create</Button></Col>
+                <Col style={{paddingLeft: "52.5vw"}}><Button onClick={() => create()} style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "green"}}>Create</Button></Col>
             </Row>               
         </Container>
     </div> 

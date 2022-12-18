@@ -36,6 +36,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path ="/" component={Login}/>
+        <Route exact path ="/Register" component={Register}/>
         <Route exact path ="/MyProfilePage" component = {MyProfilePage} />
         <Route exact path="/ArchivePage" component={ArchivePage} />
         <Route exact path="/ApplicationsPage" component={ApplicationsPage} />
