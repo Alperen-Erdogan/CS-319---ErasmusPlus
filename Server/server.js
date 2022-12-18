@@ -12,7 +12,16 @@ const cors = require("cors")
 const app = express()
 const bcrypt = require("bcrypt")
 
-const users = [] // Just for test
+/*
+    USER MODEL "!!!!!!!"
+*/
+
+    const User = require("./../Database/UserSchema") 
+    const dbConnect = require("./../Database/dbConnect") // Connecting to the database
+
+    dbConnect()
+
+
 
 app.use(cors())
 
@@ -46,22 +55,43 @@ app.get("/register", (req, res) => {
 
 })
 
-app.post('/register', async (req, res) => {
-    
-    try{
-        const hashedPassword = await bcrypt.hash(req.body.password, 10)
-        users.push({
-            id: Date.now.toString(),
-            name: req.body.name,
-            email: req.body.email,
-            password: hashedPassword
-        })
-        res.redirect("/login") // It migth be wrong in the react
-    }catch{
-        res.redirect("/register") // It might be wrong in the react
-    }
-    console.log(users)
-})
+app.post("/register", (request, response) => {
+    // hash the password
+    bcrypt
+      .hash(request.body.password, 10)
+      .then((hashedPassword) => {
+        // create a new user instance and collect the data
+        const user = new User({
+          email: request.body.email,
+          password: hashedPassword,
+        });
+  
+        // save the new user
+        user
+          .save()
+          // return success if the new user is added to the database successfully
+          .then((result) => {
+            response.status(201).send({
+              message: "User Created Successfully",
+              result,
+            });
+          })
+          // catch error if the new user wasn't added successfully to the database
+          .catch((error) => {
+            response.status(500).send({
+              message: "Error creating user",
+              error,
+            });
+          });
+      })
+      // catch error if the password hash isn't successful
+      .catch((e) => {
+        response.status(500).send({
+          message: "Password was not hashed successfully",
+          e,
+        });
+      });
+  });
 
 app.get("/", (req,res) => {
     res.json({name : "Ahmet"})
