@@ -89,16 +89,25 @@ function Login() {
             <Form>
                 <Form.Group as = {Row} controlId="formBasicEmail">
                     <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Email</Form.Label></Col>
-                    <Col className = "loginCol"><Form.Control className = "standardTxtInput" type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)}/></Col>
+                    <Col className = "loginCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
                     <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Password</Form.Label></Col>
-                    <Col className = "loginCol"><Form.Control className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
+                    <Col className = "loginCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
                 </Form.Group>
-                <Button variant="primary" className = "customBtn" onClick={() => {submit()}} href={href} >
-                    Login
-                </Button>
+                <Row style={{marginTop: "1vh"}}>
+                    <Col className = "loginCol">
+                        <Button variant="primary" className = "customBtn" onClick={() => {submit()}} href={href} >
+                            Login
+                        </Button>
+                    </Col>
+                    <Col className = "loginCol" style={{marginLeft:"9.4vw"}}>
+                        <Button variant="primary" className = "customBtn" /*onClick={() => {submit()}} href={href }  TO DO*/ >
+                            Register
+                        </Button>
+                    </Col>
+                </Row>
             </Form>        
         </Container>
     </div>);
