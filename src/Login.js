@@ -103,7 +103,7 @@ function Login() {
                         </Button>
                     </Col>
                     <Col className = "loginCol" style={{marginLeft:"9.4vw"}}>
-                        <Button variant="primary" className = "customBtn" /*onClick={() => {submit()}} href={href }  TO DO*/ >
+                        <Button variant="primary" className = "customBtn" /*onClick={() => {submit()}} href={href }  TO DO*/  href='/Register'>
                             Register
                         </Button>
                     </Col>
