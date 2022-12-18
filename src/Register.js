@@ -23,6 +23,11 @@ const validEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-
 */
 
 function Register() {
+    const [authenticated, setAuthenticated] = useState(localStorage.getItem("authenticated") || false)
+    useEffect(() => {
+        localStorage.setItem("authenticated", false)
+        setAuthenticated(false)
+      }, []);
 
     let handleSubmit = async (email, password, firstName, lastName, bilkentId, doB, cgpa) =>{
         let res = await api.post("/register", {"email": email, "password":password, 
