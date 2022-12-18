@@ -50,9 +50,6 @@ function OpenedTask() {
                         <Col><Form.Control disabled type = "email" placeholder = "Host Department" style = {{maxWidth: "25'vw", minWidth: "25vw"}}/></Col>
                     </Form.Group>
                     <Form.Group as = {Row} className = "standardTxtInput">
-                        <Form.Text style = {{paddingLeft: "20vw", paddingRight: "20vw", color: "black"}}>Please upload the documents you downloaded and filled from the Documents section. </Form.Text>
-                    </Form.Group>
-                    <Form.Group as = {Row} className = "standardTxtInput">
                         <Col><Form.Label>Documents:</Form.Label></Col>
                         <Col><Form.Control disabled type="file" multiple style = {{minWidth: "58.5vw", maxWidth: "58.5vw"}}/></Col>
                     </Form.Group>
