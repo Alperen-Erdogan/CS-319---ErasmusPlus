@@ -11,7 +11,15 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, "Please Provide a password"],
         unique: false
+    },
+
+    name: {
+        type: String,
+        unique : false,
+        default: "Hasan"
     }
+
+
 
 })
 

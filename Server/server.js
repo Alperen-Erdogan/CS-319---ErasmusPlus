@@ -21,7 +21,7 @@ const auth = require("./auth")
 
     const User = require("./../Database/UserSchema") 
     const dbConnect = require("./../Database/dbConnect") // Connecting to the database
-const { request, response } = require("express")
+    const { request, response } = require("express")
 
 dbConnect()
 
@@ -75,8 +75,9 @@ app.post("/login", (request, response) => {
     
       // if email exists
       .then((user) => {
-        // compare the password entered and the hashed password found
-        //console.log(user)
+        
+        console.log(user)
+        
         bcrypt
           .compare(request.body.password, user.password)
   
@@ -106,10 +107,9 @@ app.post("/login", (request, response) => {
               "message": "Login Successful",
               "email": user.email,
               "token":token,
-              "success": true
-            });
-
-            
+              "success": true,
+              "user": user
+            })          
           })
           // catch error if password does not match
           .catch((error) => {
@@ -141,6 +141,7 @@ app.post("/register", (request, response) => {
         const user = new User({
           email: request.body.email,
           password: hashedPassword,
+          name: "Hasan"
         });
 
         console.log(user)
