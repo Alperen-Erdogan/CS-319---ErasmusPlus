@@ -49,11 +49,6 @@ function EditProfile() {
                         <Col className = "editProfileCol"><Form.Control className = "standardTxtInput" type="dob" placeholder="Date of Birth" /></Col>
                     </Form.Group>
 
-                    <Form.Group as = {Row} className="standardTxtInput">
-                        <Col className = "editProfileCol" style = {{marginTop: "0.7vh", maxWidth: "15vh", marginLeft: "3vh", marginRight: "3vh"}}><Form.Label>National ID</Form.Label></Col>
-                        <Col className = "editProfileCol"><Form.Control className = "standardTxtInput" type="nationalID" placeholder="National ID" /></Col>
-                    </Form.Group>
-
                     <Form.Group as = {Row} className="standardTxtInput" controlId="formBasicPassword">
                         <Col className = "editProfileCol" style = {{marginTop: "0.7vh", maxWidth: "15vh", marginLeft: "3vh", marginRight: "3vh"}}><Form.Label>CGPA</Form.Label></Col>
                         <Col className = "editProfileCol"><Form.Control className = "standardTxtInput" type="cgpa" placeholder="CGPA" /></Col>

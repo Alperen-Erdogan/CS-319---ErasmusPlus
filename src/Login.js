@@ -86,12 +86,12 @@ function Login() {
         <Container className = 'loginCont'>
             <Form>
                 <Form.Group as = {Row} controlId="formBasicEmail">
-                    <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Email</Form.Label></Col>
+                    <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Email:</Form.Label></Col>
                     <Col className = "loginCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Password</Form.Label></Col>
+                    <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Password:</Form.Label></Col>
                     <Col className = "loginCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
                 </Form.Group>
                 <Row style={{marginTop: "1vh"}}>

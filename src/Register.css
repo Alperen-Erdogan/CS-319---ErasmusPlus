@@ -22,8 +22,8 @@
     padding: 5vh;
     padding-bottom: 2vh;
     padding-top: 0vh;
-    max-width: 25vw;
-    min-width: 25vw;
+    max-width: 50vw;
+    min-width: 50vw;
 }
 .customBtn{
     border-radius: 5px;
