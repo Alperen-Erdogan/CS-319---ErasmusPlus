@@ -58,6 +58,11 @@ function Register() {
                     <Col className = "registerCol"><Form.Label>Password</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
                 </Form.Group>
+
+                <Form.Group as = {Row} controlId="formBasicPassword">
+                    <Col className = "registerCol"><Form.Label>Confirm Password</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Control className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
+                </Form.Group>
                 <Button variant="primary" className = "customBtn" onClick={() => {submit()}} >
                     register
                 </Button>
