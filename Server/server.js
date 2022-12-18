@@ -66,7 +66,11 @@ app.get("/login", (req, res) => {
 })
 
 app.post("/login", (request, response) => {
-    // check if email exists
+    
+    const result = async () => {
+
+    }
+
     User.findOne({ email: request.body.email })
     
       // if email exists
@@ -83,7 +87,7 @@ app.post("/login", (request, response) => {
             if(!passwordCheck) {
               return response.status(400).send({
                 message: "Passwords does not match",
-                //error,  Might be a problem !!!!!!! Error might be needed
+                error: "Error Message"
               });
             }
   
@@ -99,9 +103,10 @@ app.post("/login", (request, response) => {
   
             //   return success response
             response.status(200).send({
-              message: "Login Successful",
-              email: user.email,
-              token,
+              "message": "Login Successful",
+              "email": user.email,
+              "token":token,
+              "success": true
             });
 
             

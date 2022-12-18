@@ -23,47 +23,32 @@ const validEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-
 */
 
 function Login() {
-    let handleSubmit = async (email, password) =>{
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("")
+
+    const [authenticated, setAuthenticated] = useState(localStorage.getItem("authenticated") || false)
+
+    const handleSubmit = async () =>{
         try{
             let res = await api.post("/login", {"email": email, "password":password} )
             return res
         }catch(e){
-            alert("Password or Email is Wrong")
+            console.log("Something Went Wrong")
         }
        
     } 
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("")
-    const [href, setHref] = useState("")
+   
 
     const submit = (e) =>{
-        e.preventDefault()
-
-        alert("Submit Worked")
-        setHref("/")
-
-        //alert("sda")
-        console.log("Email is: " , email)
-        console.log("Password is: ", password)
 
         if(!email.match(validEmailRegex)){
             console.log("Not Valid Mail Address")
-            setHref("/")
-            return
         }
-        let res = handleSubmit(email, password)
-        
-        let isSuccesfull = res.body.isSuccesfull
-
-        
-        if(isSuccesfull){
-            setHref("/MyProfilePage")
-        }
-        
-        else{
-            setHref("/")
-        }
+        handleSubmit()
+            .then(res => console.log(res.data.token))
+            .catch(error => console.log(error))
     }
 
 
@@ -98,7 +83,7 @@ function Login() {
                 </Form.Group>
                 <Row style={{marginTop: "1vh"}}>
                     <Col className = "loginCol">
-                        <Button variant="primary" className = "customBtn" onClick={() => {submit()}} href={href} >
+                        <Button variant="primary" className = "customBtn" onClick={() => {submit()}}>
                             Login
                         </Button>
                     </Col>
