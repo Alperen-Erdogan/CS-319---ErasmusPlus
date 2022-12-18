@@ -40,7 +40,35 @@ function Register() {
 
 
 
-    function submit(){
+    function submit(){  
+        if(!email.match(validEmailRegex)){
+            console.log("Not a Valid Mail Address")
+            return
+        }
+        if(password.match("")){
+            console.log("Not a Valid Password")
+            return
+        }
+        if(firstName.match("")){
+            console.log("Not a Valid First Name")
+            return
+        }
+        if(lastName.match("")){
+            console.log("Not a Valid Last Name")
+            return
+        }
+        if(bilkentId.match("")){
+            console.log("Not a Valid Bilkent ID")
+            return
+        }
+        if(doB.match("")){
+            console.log("Not a Valid Date of Birth")
+            return
+        }
+        if(cgpa.match("")){
+            console.log("Not a Valid CGPA")
+            return
+        }
 
         //alert("sda")
         console.log("Email is: " , email)
@@ -51,10 +79,7 @@ function Register() {
         console.log("Date of Birth is: ", doB)
         console.log("CGPA is: ", cgpa)
 
-        if(!email.match(validEmailRegex)){
-            console.log("Not Valid Mail Address")
-            return
-        }
+
         let res = handleSubmit(email, password, firstName, lastName, bilkentId, doB, cgpa);
     }
 
