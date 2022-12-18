@@ -44,6 +44,7 @@ const NewApplicationPage = () => {
       <header className='page-title'> {/*Page title*/}
         <h1 className='page-title-text'>{pageTitle}</h1>
       </header>
+
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
           <NewApplication/>

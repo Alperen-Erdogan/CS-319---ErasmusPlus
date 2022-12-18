@@ -84,7 +84,7 @@ const Sidebar = () => {
         </SidebarMenu.Nav>
 
         <SidebarMenu.Nav className='logout-nav'>
-          <SidebarMenu.Nav.Link className='nav-link-style' >
+          <SidebarMenu.Nav.Link className='nav-link-style' href="/Login" >
             <SidebarMenu.Nav.Icon>
               <BoxArrowLeft size={36} />
             </SidebarMenu.Nav.Icon>
