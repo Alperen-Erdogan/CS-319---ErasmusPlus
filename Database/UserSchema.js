@@ -13,7 +13,23 @@ const userSchema = new mongoose.Schema({
         unique: false
     },
 
-    name: {
+    firstName: {
+        type: String,
+        unique : false,
+    },
+    lastName: {
+        type: String,
+        unique : false,
+    },
+    bilkentId: {
+        type: String,
+        unique : false,
+    },
+    doB: {
+        type: String,
+        unique : false,
+    },
+    cgpa: {
         type: String,
         unique : false,
     },
