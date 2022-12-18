@@ -1,15 +1,7 @@
 "use strict"
 
 const mongoose = require('mongoose')
-
-const facultySchema = new mongoose.Schema({
-    
-})
-
-function fetchData(){
-
-}
-
+const Faculty = require("./../../../Database/Faculty")
 
 const express = require("express")
 let router = express.Router()
@@ -22,7 +14,11 @@ router.use(function(req, res, next){
 router
     .route("")
     .post((req, res) => {
-        res.json({"dataTable" : "hello"})
+        Faculty
+        .find()
+        .then((result) => res.json(result))
+        .catch((e) => console.log(e))
+        
     })
 
 
