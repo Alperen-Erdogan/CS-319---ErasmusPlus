@@ -24,6 +24,8 @@ import CoordinatorListPage from './pages/CoordinatorListPage';
 import ApplicationsPage from './pages/ApplicationsPage';
 import DocumentsPage from './pages/DocumentsPage';
 import SchoolPage from './pages/SchoolPage';
+import NewApplicationPage from './pages/NewApplicationPage';
+import TestPage from './pages/TestPage';
 
 function App() {
   const pageTitle = "My Profile";
@@ -37,6 +39,8 @@ function App() {
         <Route exact path="/DocumentsPage" component={DocumentsPage} />
         <Route exact path="/SchoolPage" component={SchoolPage} />
         <Route exact path="/CoordinatorListPage" component={CoordinatorListPage} />
+        <Route exact path="/NewApplicationPage" component={NewApplicationPage} />
+        <Route exact path="/TestPage" component={TestPage} />
         <Redirect to="/" />
       </Switch>
     </Router>

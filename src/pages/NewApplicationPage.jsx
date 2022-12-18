@@ -7,10 +7,12 @@ import Col from 'react-bootstrap/Col';
 import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
-import SchoolsAndCourses from "../SchoolsAndCourses";
+import NewApplication from "../NewApplication";
+import OpenedTask from "../OpenedTask";
+import OpenedApplication from "../OpenedApplication";
 
-const SchoolPage = () => {
-  const pageTitle = "Schools & Courses"
+const NewApplicationPage = () => {
+  const pageTitle = "New Application"
   return(
     <div className='clear'>
       <header className="bilkent-header"> {/*Main Header*/}
@@ -45,9 +47,7 @@ const SchoolPage = () => {
 
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
-          
-          <SchoolsAndCourses/>
-
+          <NewApplication/>
         </Container>
       </Container>
     </Container>{/*=================end of contents========================*/}
@@ -59,4 +59,4 @@ const SchoolPage = () => {
   );
 };
 
-export default SchoolPage;
+export default NewApplicationPage;

@@ -10,12 +10,12 @@ import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image'
 import NavItem from 'react-bootstrap/NavItem';
 import Tab from 'react-bootstrap/Tab';
-import {ArrowLeft, ArrowReturnLeft, ArrowReturnRight, Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons/dist';
+import {ArrowLeft, Bank2, Clipboard2Fill, FileEarmarkBreakFill} from 'react-bootstrap-icons/dist';
 import { Table } from 'react-bootstrap';
 
 
-function OpenedTask() {
-    const pageTitle = "Opened Task";
+function OpenedApplication() {
+    const pageTitle = "Opened Application";
   return (
     <div>   
         <Container fluid className = 'NewApplCont'>
@@ -49,22 +49,20 @@ function OpenedTask() {
                         <Col style={{paddingTop: "0.5vh"}}><Form.Label>Host Department:</Form.Label></Col>
                         <Col><Form.Control disabled type = "email" placeholder = "Host Department" style = {{maxWidth: "25'vw", minWidth: "25vw"}}/></Col>
                     </Form.Group>
+                    
                     <Form.Group as = {Row} className = "standardTxtInput">
                         <Col><Form.Label>Documents:</Form.Label></Col>
                         <Col><Form.Control disabled type="file" multiple style = {{minWidth: "58.5vw", maxWidth: "58.5vw"}}/></Col>
                     </Form.Group>
                 </Form>
             </Row>
-            <Row style={{maxWidth: "75vw", minWidth: "75vw"}}>
+            <Row>
                 <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}><ArrowLeft/></Button></Col>
-                <Col style={{paddingLeft: "43.3vw"}}>
-                    <Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "red", marginLeft: "0vw"}}>Reject</Button>
-                    <Button style={{paddingLeft: "0.5vw", paddingRight: "0.5vw", paddingBottom: "0.8vh", backgroundColor: "green", marginLeft: "1vw"}}>Approve</Button>
-                </Col>
+                <Col style={{paddingLeft: "52.5vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "red"}}>Cancel</Button></Col>
             </Row>               
         </Container>
     </div> 
   );
 }
 
-export default OpenedTask;
+export default OpenedApplication;

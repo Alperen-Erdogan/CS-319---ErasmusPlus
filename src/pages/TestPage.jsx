@@ -5,12 +5,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import "../App.css";
-import logo2 from '../items/bilkent-logo.png'
+import "../test.css";
+import logo2 from '../items/bilkent-logo.png';
 import Sidebar from '../Sidebar';
-import SchoolsAndCourses from "../SchoolsAndCourses";
+import Test from "../test";
 
-const SchoolPage = () => {
-  const pageTitle = "Schools & Courses"
+const TestPage = () => {
+  const pageTitle = "Test Page"
   return(
     <div className='clear'>
       <header className="bilkent-header"> {/*Main Header*/}
@@ -46,7 +47,7 @@ const SchoolPage = () => {
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
           
-          <SchoolsAndCourses/>
+          <Test/>
 
         </Container>
       </Container>
@@ -59,4 +60,4 @@ const SchoolPage = () => {
   );
 };
 
-export default SchoolPage;
+export default TestPage;
