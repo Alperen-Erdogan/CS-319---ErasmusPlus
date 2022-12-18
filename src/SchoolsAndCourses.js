@@ -26,8 +26,8 @@ function SchoolsAndCourses() {
                 </Form.Text>
             </Row>
             <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
-                <Table striped hover>
-                    <thead  style = {{backgroundColor: "darkGray"}}>
+                <Table striped hover className='header-table'>
+                    <thead  >
                         <tr>
                         <th>Erasmus/Bilateral</th>
                         <th>Host University</th>
