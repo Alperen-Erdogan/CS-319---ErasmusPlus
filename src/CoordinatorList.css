@@ -1,28 +1,17 @@
-.table-coordinator{
-    width: 30%;
-  }
-  
-  .table-departmant{
-    width: 70%;
-  }
-  
-  .table-title{
-    background-color: #DBFCFF;
-  }
+.coorIcon{
+    margin-right: 0.8vw;
+    margin-left: 1vw;
+}
 
-
-  header h3{
-    background-color: #D3D3D3;
-    margin: 0;
-    padding: 5px;
-    padding-left: 10px;
-  }
-
-  header h3 span{
-    padding-left: 15px;
-  }
-
-.main-table{
+.coorCont{
+    margin-top: 2.7vh;
+    background-color: lightgrey;
+    border-radius: 15px;
     overflow-y: scroll;
-    max-height: 60vh;
+    align-items: center;
+    align-content: center;
+    min-height: 67vh;
+    max-height: 67vh;
+    min-width: 80vw;
+    max-width: 80vw;
 }
