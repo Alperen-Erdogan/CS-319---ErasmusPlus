@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const facultyStaff = require('./FacultyStaf')
 
 const facultyScheme = new mongoose.Schema({
 
@@ -8,10 +7,7 @@ const facultyScheme = new mongoose.Schema({
         required: [true, "Please Provide Faculty Name"]
     },
 
-    coordinatorName: {
-        type: String ,
-        required: [false]
-    }
+    
 
 
 

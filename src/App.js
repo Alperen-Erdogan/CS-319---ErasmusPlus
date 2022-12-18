@@ -32,7 +32,7 @@ import TestTable from './TestTable';
 
 function App() {
   const pageTitle = "My Profile";
-  if ((localStorage.getItem("authenticated")) === "false") {
+  /*if ((localStorage.getItem("authenticated")) === "false") {
 
      return (
       <Router>
@@ -44,13 +44,14 @@ function App() {
     </Router>
      
      )
-    }
+    }*/
   return (
     <>
     {
     <Router>
       <Switch>
-        <Route exact path ="/" component={Login}/>
+        <Route exact path ="/" component={MyProfilePage}/>
+        <Route exact path ="/Login" component={Login}/>
         <Route exact path ="/Dashboard" component={Dashboard}/>
         <Route exact path ="/TestTable" component={TestTable}/>
         <Route exact path ="/Register" component={Register}/>

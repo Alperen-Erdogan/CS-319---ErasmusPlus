@@ -21,8 +21,8 @@ function MyProfile() {
     <div>   
         <Container fluid>
             <Row className = "profileRow">
-                <Col className='ProfileOverviewCol'> 
-                    <Container fluid className='profileOVCont' style={{maxWidth: "30vw", minWidth: "30vw"}}>
+                <Col className='ProfileOverviewCol' style={{maxWidth: "35%", minWidth: "35%"}}> 
+                    <Container fluid className='profileOVCont'>
                         <Row className = 'ProfileOVFirstRow'>  
                             <Col className='pfpCol'><Image  src={pfp} className = "pfp" style={{borderRadius: "50%"}}/></Col>
                             <Col>
@@ -33,7 +33,7 @@ function MyProfile() {
 
                     </Container>
                 </Col>
-                <Col className = 'ProfileEditCol'>
+                <Col className = 'ProfileEditCol' style={{width: "55%"}}>
                     <EditProfile/>
                 </Col>
             </Row>      

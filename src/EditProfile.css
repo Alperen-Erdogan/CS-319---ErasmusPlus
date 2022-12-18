@@ -1,16 +1,15 @@
 .standardTxtInput{
     border-radius: 5px;
     padding: auto;
-    margin: 10px;
-    margin-top: 0px;
-    max-width: 35vw;
+    max-width: 30%;
+    min-width: 40%;
+
 }
 
 .customBtn{
-    border-radius: 5px;
-    padding: auto;
-    margin-left: 2.5vw;
-    margin-bottom: 4vh;
+    border-radius: 15px;
+    margin-left: 15vh;
+    margin-bottom: 3vh;
     margin-top: 2vh;
 }
 
@@ -18,10 +17,7 @@
     background-color: lightgrey;
     border-radius: 15px;
     overflow-y: scroll;
-    min-height: 67vh;
-    max-height: 67vh;
-    min-width: 48vw;
-    max-width: 48vw;
+    height: fit-content;
 }
 
 .profileOVIcon{

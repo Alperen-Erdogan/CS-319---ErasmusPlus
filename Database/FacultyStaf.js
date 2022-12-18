@@ -7,11 +7,6 @@ const FacultyStaf = new mongoose.Schema({
         require: [true, "Please Provide Name"]
     },
 
-    lastName: {
-        type: String,
-        require: [true, "Please Provide LastName"]
-    },
-
     title: {
         type: String,
         require: [true, "Please Provide Title"]
@@ -23,5 +18,3 @@ const FacultyStaf = new mongoose.Schema({
     }
 
 })
-
-module.exports = mongoose.model.Users || mongoose.model("FacultyStaff", FacultyStaf)
