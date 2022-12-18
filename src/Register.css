@@ -1,0 +1,39 @@
+.standardTxtInput{
+    border-radius: 5px;
+    padding: auto;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.registerCont{
+    background-color: lightgray;
+    border-radius: 10px;
+    align-self: center;
+    max-width: auto;
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.customBtn{
+    border-radius: 5px;
+    padding: auto;
+    margin: 10px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.registerMain{
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+.registerCol{
+    width: auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+

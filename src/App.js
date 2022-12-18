@@ -6,7 +6,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import logo2 from './items/bilkent-logo.png'
-import Login from './Login'
 import MyProfile from './MyProfile';
 import Documents from './Documents'
 import SchoolsAndCourses from './SchoolsAndCourses';
@@ -26,15 +25,18 @@ import DocumentsPage from './pages/DocumentsPage';
 import SchoolPage from './pages/SchoolPage';
 import NewApplicationPage from './pages/NewApplicationPage';
 import TestPage from './pages/TestPage';
+import Register from './Register';
+import Login from './Login';
 
 function App() {
   const pageTitle = "My Profile";
   return (
     <>
-    {/*
+    {
     <Router>
       <Switch>
-        <Route exact path ="/" component = {MyProfilePage} />
+        <Route exact path ="/" component={Login}/>
+        <Route exact path ="/MyProfilePage" component = {MyProfilePage} />
         <Route exact path="/ArchivePage" component={ArchivePage} />
         <Route exact path="/ApplicationsPage" component={ApplicationsPage} />
         <Route exact path="/DocumentsPage" component={DocumentsPage} />
@@ -45,10 +47,7 @@ function App() {
         <Redirect to="/" />
       </Switch>
     </Router>
-    */}
-
-    <Login></Login>
-
+    }
     </>
     
   );

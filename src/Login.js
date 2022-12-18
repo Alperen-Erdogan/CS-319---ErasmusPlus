@@ -22,16 +22,25 @@ const validEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-
 */
 
 function Login() {
-
     let handleSubmit = async (email, password) =>{
-        let res = await api.post("/login", {"email": email, "password":password} )
-        return res
+        try{
+            let res = await api.post("/login", {"email": email, "password":password} )
+            return res
+        }catch(e){
+            alert("Password or Email is Wrong")
+        }
+       
     } 
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("")
+    const [href, setHref] = useState("")
 
-    function submit(){
+    const submit = (e) =>{
+        e.preventDefault()
+
+        alert("Submit Worked")
+        setHref("/")
 
         //alert("sda")
         console.log("Email is: " , email)
@@ -39,9 +48,21 @@ function Login() {
 
         if(!email.match(validEmailRegex)){
             console.log("Not Valid Mail Address")
+            setHref("/")
             return
         }
         let res = handleSubmit(email, password)
+        
+        let isSuccesfull = res.body.isSuccesfull
+
+        
+        if(isSuccesfull){
+            setHref("/MyProfilePage")
+        }
+        
+        else{
+            setHref("/")
+        }
     }
 
 
@@ -58,7 +79,7 @@ function Login() {
                     <Col className = "loginCol"><Form.Label>Password</Form.Label></Col>
                     <Col className = "loginCol"><Form.Control className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
                 </Form.Group>
-                <Button variant="primary" className = "customBtn" onClick={() => {submit()}} >
+                <Button variant="primary" className = "customBtn" onClick={() => {submit()}} href={href} >
                     Login
                 </Button>
             </Form>        

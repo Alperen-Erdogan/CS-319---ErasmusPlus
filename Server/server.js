@@ -68,7 +68,7 @@ app.get("/login", (req, res) => {
 app.post("/login", (request, response) => {
     // check if email exists
     User.findOne({ email: request.body.email })
-  
+    
       // if email exists
       .then((user) => {
         // compare the password entered and the hashed password found
@@ -78,7 +78,7 @@ app.post("/login", (request, response) => {
   
           // if the passwords match
           .then((passwordCheck) => {
-  
+            
             // check if password matches
             if(!passwordCheck) {
               return response.status(400).send({
@@ -103,6 +103,8 @@ app.post("/login", (request, response) => {
               email: user.email,
               token,
             });
+
+            
           })
           // catch error if password does not match
           .catch((error) => {
@@ -118,7 +120,7 @@ app.post("/login", (request, response) => {
           message: "Email not found",
           e,
         });
-      });
+      });      
   });
 
 app.get("/register", (req, res) => {
