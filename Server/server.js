@@ -13,15 +13,32 @@ const app = express()
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 
+const auth = require("./auth")
+
 /*
     USER MODEL "!!!!!!!"
 */
 
     const User = require("./../Database/UserSchema") 
     const dbConnect = require("./../Database/dbConnect") // Connecting to the database
-const { request } = require("express")
+const { request, response } = require("express")
 
-    dbConnect()
+dbConnect()
+
+/* THIS COD MIGHT BE BOILER PLATE CODE */
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+    );
+    res.setHeader(
+      "Access-Control-Allow-Methods",
+      "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+    );
+    next();
+  });
+
 
 
 
@@ -65,7 +82,7 @@ app.post("/login", (request, response) => {
             if(!passwordCheck) {
               return response.status(400).send({
                 message: "Passwords does not match",
-                error,
+                //error,  Might be a problem !!!!!!! Error might be needed
               });
             }
   
@@ -165,6 +182,14 @@ app.post("/", (req,res) => {
     let userInfo = {"name": name, "surname": surname, "email": email}
 
     //saveToDabase()
+})
+
+app.get("/free-endpoint", (request, response) => {
+    response.json({message: "You are free to accesss"})
+})
+
+app.get("/auth-endpoint", auth, (request, response) => {
+    response.json({message: "You are authorized"})
 })
 
 
