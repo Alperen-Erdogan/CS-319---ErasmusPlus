@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import './Login.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -59,6 +60,7 @@ function Login() {
                 setAuthenticated(true) // It shows that it is authenticated
                 localStorage.setItem("authenticated", true)
                 history.push('/Dashboard')
+                location.reload()
             })
             .catch(error => console.log(error))
     }
