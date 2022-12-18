@@ -30,19 +30,22 @@
 }
 
 .standardTxtInput{
-    border-radius: 5px;
+    border-radius: 15px;
     padding: auto;
-    margin: 10px;
-    margin-top: 0px;
-    max-width: 35vw;
+    margin: 1vh;
+    padding-top: 1vh;
+    max-width: 67vw;
 }
 
-.editProfileCont{
+.NewApplCont{
+    margin-top: 2.7vh;
     background-color: lightgrey;
     border-radius: 15px;
-    overflow-y: scroll;
-    min-height: 67vh;
-    max-height: 67vh;
-    min-width: 48vw;
-    max-width: 48vw;
+    align-items: center;
+    align-content: center;
+    min-height: fit-content;
+    max-height: fit-content;
+    padding-bottom: 2vh;
+    min-width: 75vw;
+    max-width: 75vw;
 }

@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 import "../App.css";
 import logo2 from '../items/bilkent-logo.png'
 import Sidebar from '../Sidebar';
+import NewApplication from "../NewApplication";
 
 const NewApplicationPage = () => {
   const pageTitle = "New Application"
@@ -44,11 +45,7 @@ const NewApplicationPage = () => {
 
       <Container fluid className='content-container'>
         <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
-
-          
-
-          
-
+          <NewApplication/>
         </Container>
       </Container>
     </Container>{/*=================end of contents========================*/}
