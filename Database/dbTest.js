@@ -5,6 +5,9 @@ const MongoClient = require("mongodb").MongoClient
 const SchoolCourses = require("./SchoolCourses")
 const Application = require("./Application")
 const fs = require("fs")
+
+
+
 dbConnect()
 
 /*
@@ -164,30 +167,34 @@ school4.save()
 school5.save()
 */
 
-let totalFile = ""
+let binary = fs.readFileSync("./test.pdf", null)
 
-let reader = fs.createReadStream("test.pdf")
+//console.log(binary)
 
-reader.on("data", function(chunk){
-    totalFile.append(chunk)
-})
-
-console.log(toy)
+//console.log(reader)
+//console.log(toy)
 
 const app = new Application({
-    currentSemesterDate: "19.12.2000",
+    currentSemesterDate: "19.12.2022",
     firstName: "Efe Can",
     lastName: "Tepe",
     hostUniversity: "Bilkent University",
     department: "Computer Science",
     cgpa: "2.43",
     hostDepartment: "Computer Science",
-    binData: Buffer.from("test.pdf")
+    binData: binary
 })
 
 console.log("------------------------")
-console.log(app.binData.toString())
+//console.log(app.binData.toString())
 console.log("------------------------")
 
 app.save()
+
+//var blob = new Blob([app.binData], {"type": "application/pdf"})
+
+
+
+fs.writeFileSync('hasan.pdf', app.binData);
+
 
