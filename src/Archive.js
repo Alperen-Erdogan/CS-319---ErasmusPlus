@@ -17,54 +17,33 @@ import { Table } from 'react-bootstrap';
 function Archive() {
     const pageTitle = "Archive";
   return (
-    <div>   
-        <Container fluid className = 'archCont'>
-            <Row>
-                <Form.Text style={{padding: "1.2vh"}}>
-                    <ArchiveFill size={30} className = 'archIcon'/>
-                    Archive
-                </Form.Text>
-            </Row>
-            <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
-                <Table striped hover>
-                    <tbody>
+    <div>
+        <header><h3> <FileEarmarkBreakFill size={42}/><span>Documents</span></h3></header>
+            <div className='main-table'>
+                <Table striped bordered hover>
+                    <thead>
+                        <tr className='table-title'>
+                            <th className='doc-number'>#</th>
+                            <th className='doc-table-name'>Documents Name</th>
+                            <th className='doc-download'>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
                         <tr>
-                            <th>Application Name 1</th>
-                            <th>
-                                <Button variant = "success" style={{borderRadius: "15px"}}>
-                                    Download
-                                </Button>
-                            </th>
-                        </tr>  
+                            <td className='doc-number'>1</td>
+                            <td className='doc-table-name'>2022-2023 Erasmus Application - CS - Mehmet Yılmaz</td>
+                            <td className='doc-download'><Button variant="primary">Download</Button></td>
+                        </tr>
                         <tr>
-                            <th>Application Name 2</th>
-                            <th>
-                                <Button variant = "success" style={{borderRadius: "15px"}}>
-                                    Download
-                                </Button>
-                            </th>
-                        </tr>  
-                            {/*table element with button template 
-                                
-                                <tr>
-                                    <th>1</th>
-                                    <th>Pre-Approval Form</th>
-                                    <th>
-                                        <Button variant = "success">
-                                            Download
-                                        </Button>
-                                    </th>
-                                </tr>  
-
-                            */}
-
-
-                                          
+                            <td className='doc-number'>2</td>
+                            <td className='doc-table-name'>2022-2023 Erasmus Application - CS - Ata Doğan</td>
+                            <td className='doc-download'><Button variant="primary">Download</Button></td>
+                        </tr>
+                        
                     </tbody>
                 </Table>
-            </Row>      
-        </Container>
-    </div> 
+            </div>
+        </div>
   );
 }
 

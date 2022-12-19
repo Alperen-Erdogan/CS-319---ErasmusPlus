@@ -18,7 +18,7 @@ function Documents() {
     const pageTitle = "Documents";
   return (
     <div>
-            <header><h3> <FileEarmarkBreakFill size={42}/><span>Documents</span></h3></header>
+        <header><h3> <FileEarmarkBreakFill size={42}/><span>Documents</span></h3></header>
             <div className='main-table'>
                 <Table striped bordered hover>
                     <thead>
