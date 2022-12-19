@@ -75,3 +75,7 @@
   background-color: #3FC22B;
   border:0px solid black;
 }
+
+.open-button:hover{
+  background-color: #36aa24;
+}

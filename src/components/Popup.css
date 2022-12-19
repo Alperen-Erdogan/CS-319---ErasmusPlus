@@ -14,10 +14,9 @@
 .popup-inner{
     position: relative;
     padding: 32px;
-    height: 70vh;
+    height: 85vh;
     width: 80vw;
-    background-color: #ffffff;
-    border-radius: 10px;  
+    border-radius: 0px;  
 }
 
 .popup-inner .close-btn{
@@ -25,4 +24,12 @@
     top: 16px;
     right: 16px;
 
+}
+
+.x-btn{
+    color: #ffffff;
+}
+
+.x-btn:hover{
+    color: #FF3838;
 }
