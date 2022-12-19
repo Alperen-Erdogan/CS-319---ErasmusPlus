@@ -142,7 +142,7 @@ app.post("/register", (request, response) => {
           email: request.body.email,
           password: hashedPassword,
           firstName: request.body.firstName,
-          lastName: request.body.firstName,
+          lastName: request.body.lastName,
           bilkentId: request.body.bilkentId,
           doB: request.body.doB,
           cgpa: request.body.cgpa,
