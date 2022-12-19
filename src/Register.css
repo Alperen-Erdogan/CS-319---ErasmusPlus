@@ -2,7 +2,7 @@
     border-radius: 5px;
     padding: auto;
     margin: 0;
-    margin-top: 4vh;
+    margin-top: 4%;
 }
 
 .registerCont2{
@@ -10,17 +10,17 @@
     border-radius: 15px;
     align-self: center;
     padding: 5vh;
-    padding-top: 18vh;
-    max-width: 40vw;
-    min-width: 40vw;
+    padding-top: 8%;
+    max-width: 40%;
+    min-width: 40%;
 }
 
 .registerCont{
     background-color: lightgray;
     border-radius: 15px;
     align-self: center;
-    padding: 5vh;
-    padding-bottom: 2vh;
+    padding: 3%;
+    padding-bottom: 1.5%;
     padding-top: 0vh;
     max-width: 50vw;
     min-width: 50vw;
@@ -28,8 +28,6 @@
 .customBtn{
     border-radius: 5px;
     padding: auto;
-    margin: 10px;
-    margin-top: 5px;
     align-self: center;
 }
 
@@ -42,7 +40,8 @@
 }
 
 .registerCol{
-    width: auto;
+    width: 25%;
+    margin-top: 3%;
     box-sizing: border-box;
     display: block;
     font-size: 20px;
