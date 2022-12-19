@@ -45,7 +45,7 @@ const DocumentsPage = () => {
       </header>
 
       <Container fluid className='content-container'>
-        <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
+        <Container fluid className='inner-content-container-new'>{/*Put contents in there*/ }
           
           <Documents/>
 

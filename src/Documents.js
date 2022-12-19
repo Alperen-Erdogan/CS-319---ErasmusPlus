@@ -17,55 +17,29 @@ import { Table } from 'react-bootstrap';
 function Documents() {
     const pageTitle = "Documents";
   return (
-    <div>   
-        <Container fluid className = 'documentCont'>
-            <Row>
-                <Form.Text style={{padding: "1.2vh"}}>
-                    <FileEarmarkBreakFill size={30} className = 'documentIcon'/>
-                    Documents
-                </Form.Text>
-            </Row>
-            <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
-                <Table striped hover >
-                    <thead style = {{backgroundColor: "darkGray"}}>
-                        <tr>
-                        <th></th>
-                        <th>Document Name</th>
-                        <th>Download</th>
+    <div>
+            <header><h3> <FileEarmarkBreakFill size={42}/><span>Documents</span></h3></header>
+            <div className='main-table'>
+                <Table striped bordered hover>
+                    <thead>
+                        <tr className='table-title'>
+                            <th className='doc-number'>#</th>
+                            <th className='doc-table-name'>Documents Name</th>
+                            <th className='doc-download'>Download</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody> 
                         <tr>
-                            <th>1</th>
-                            <th>Pre-Approval Form</th>
-                            <th>
-                                <Button variant = "success" style={{borderRadius: "15px"}}>
-                                    Download
-                                </Button>
-                            </th>
-                        </tr>  
-                            {/*table element with button template 
-                                
-                                <tr>
-                                    <th>1</th>
-                                    <th>Pre-Approval Form</th>
-                                    <th>
-                                        <Button variant = "success">
-                                            Download
-                                        </Button>
-                                    </th>
-                                </tr>  
-
-                            */}
-
-
-                                          
+                            <td className='doc-number'>1</td>
+                            <td className='doc-table-name'>Pre-Approval Form</td>
+                            <td className='doc-download'><Button variant="primary">Download</Button></td>
+                        </tr>
+                        
                     </tbody>
                 </Table>
-            </Row>      
-        </Container>
-    </div> 
-  );
+            </div>
+        </div>
+    );
 }
 
 export default Documents;

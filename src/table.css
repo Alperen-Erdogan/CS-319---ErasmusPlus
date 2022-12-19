@@ -36,3 +36,16 @@
 .table-main-tab{
     width: fit-content !important;
 }
+
+.doc-number{
+    width: 5%;
+    padding: 50px ;
+}
+
+.doc-download{
+    width: 10%;
+}
+
+.doc-table-name{
+    width: 85%;
+  }
