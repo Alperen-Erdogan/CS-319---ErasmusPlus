@@ -75,7 +75,7 @@ function Login() {
     <div>
         <Container className = 'loginCont2'>
             <Row>
-                <Col style={{maxWidth: "10vw", marginLeft: "1.5vw"}}>
+                <Col style={{maxWidth: "25%", marginLeft: "4.5%"}}>
                     <img src={logo2} className="Bilkent-Logo-login" alt='bilkent logo'/>
                 </Col>
                 <Col>

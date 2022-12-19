@@ -17,7 +17,7 @@ const api = axios.create({
 })
 
 // Regex Validation
-const validEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const validEmailRegex = /^[a-zA-Z0-22.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-22-]+(?:\.[a-zA-Z0-22-]+)*$/;
 /*
     registerc classes will be
 */
@@ -99,10 +99,10 @@ function Register() {
                 </Col>
                 <Col>
                     <Row>
-                        <Form.Text style={{fontSize:"60px", fontWeight: "bold"}}>Bilkent University</Form.Text>
+                        <Form.Text style={{fontSize:"400%", fontWeight: "bold"}}>Bilkent University</Form.Text>
                     </Row>
                     <Row> 
-                        <Form.Text style={{fontSize:"25px", fontWeight: "bold"}}>ErasmusPlus</Form.Text>
+                        <Form.Text style={{fontSize:"180%", fontWeight: "bold"}}>ErasmusPlus</Form.Text>
                     </Row>
                 </Col>
             </Row>   
@@ -110,28 +110,28 @@ function Register() {
         <Container className = 'registerCont'>
             <Form>
                 <Form.Group as = {Row} controlId="formBasicEmail">
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>First Name:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "22%"}}>First Name:</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control className = "standardTxtInput" type="firstName" placeholder="Enter First Name" onChange={e => setFirstName(e.target.value)}/></Col>
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>Last Name:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "22%"}}>Last Name:</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="lastName" placeholder="Enter Last Name" onChange={e => setLastName(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>Email:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "22%"}}>Email:</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="email" placeholder="Enter Email" onChange={e => setEmail(e.target.value)}/></Col>
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>Bilkent ID:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "22%"}}>Bilkent ID:</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="bilkentId" placeholder="Enter Bilkent ID" onChange={e => setBilkentId(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>Date of Birth:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "22%"}}>Date of Birth:</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="doB" placeholder="Enter Date of Birth" onChange={e => setDoB(e.target.value)}/></Col>
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>CGPA:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "22%"}}>CGPA:</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="cgpa" placeholder="Enter CGPA" onChange={e => setCgpa(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "5%", marginLeft: "50%"}}>Password:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "11%", marginLeft: "50%"}}>Password:</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control style={{maxWidth:"25%", minWidth:"%25"}} className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)}/></Col>
                 </Form.Group>
                 
@@ -146,9 +146,7 @@ function Register() {
                             Register
                         </Button>
                     </Col>
-                </Row>
-                
-                
+                </Row>      
             </Form>        
         </Container>
     </div>);
