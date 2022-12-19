@@ -56,7 +56,13 @@ function Login() {
             .then(res => {
                 console.log(res.data.token)
                 console.log(res.data.message)
-                console.log(res.data.user.name)
+                console.log(res.data.user.firstName)
+                //setName(res.data.user.name)
+
+                localStorage.setItem("firstName", res.data.user.firstName)
+                localStorage.setItem("lastName", res.data.user.lastName)
+                localStorage.setItem("userType", res.data.user.userType)
+
                 setAuthenticated(true) // It shows that it is authenticated
                 localStorage.setItem("authenticated", true)
                 history.push('/Dashboard')

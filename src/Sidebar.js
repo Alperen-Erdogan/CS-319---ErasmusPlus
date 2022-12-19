@@ -12,7 +12,7 @@ const Sidebar = () => {
     <SidebarMenu className="SideBar-design">
       <SidebarMenu.Header>
         <SidebarMenu.Brand>
-          <h3 id='user-name'>User Name</h3>
+          <h3 id='user-name'>{localStorage.getItem("firstName")}</h3>
         </SidebarMenu.Brand>
       </SidebarMenu.Header>
 

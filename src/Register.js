@@ -31,7 +31,7 @@ function Register() {
 
     let handleSubmit = async (email, password, firstName, lastName, bilkentId, doB, cgpa) =>{
         let res = await api.post("/register", {"email": email, "password":password, 
-                                    "firstName":firstName, "lastName":lastName, "bilkentId":bilkentId, "doB":doB, "cgpa":cgpa})
+                                    "firstName":firstName, "lastName":lastName, "bilkentId":bilkentId, "doB":doB, "cgpa":cgpa, "userType": userType })
         return res
     } 
 
@@ -42,6 +42,7 @@ function Register() {
     const [bilkentId, setBilkentId] = useState("")
     const [doB, setDoB] = useState("")
     const [cgpa, setCgpa] = useState("")
+    const [userType, setUserType] = useState("Student")
 
 
 
@@ -50,27 +51,27 @@ function Register() {
             console.log("Not a Valid Mail Address")
             return
         }
-        if(password.match("")){
+        if(password === ("")){
             console.log("Not a Valid Password")
             return
         }
-        if(firstName.match("")){
+        if(firstName ===("")){
             console.log("Not a Valid First Name")
             return
         }
-        if(lastName.match("")){
+        if(lastName === ("")){
             console.log("Not a Valid Last Name")
             return
         }
-        if(bilkentId.match("")){
+        if(bilkentId === ("")){
             console.log("Not a Valid Bilkent ID")
             return
         }
-        if(doB.match("")){
+        if(doB === ("")){
             console.log("Not a Valid Date of Birth")
             return
         }
-        if(cgpa.match("")){
+        if(cgpa === ("")){
             console.log("Not a Valid CGPA")
             return
         }
@@ -85,7 +86,7 @@ function Register() {
         console.log("CGPA is: ", cgpa)
 
 
-        let res = handleSubmit(email, password, firstName, lastName, bilkentId, doB, cgpa);
+        let res = handleSubmit(email, password, firstName, lastName, bilkentId, doB, cgpa, userType);
     }
 
 
@@ -131,8 +132,6 @@ function Register() {
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
                     <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>Password:</Form.Label></Col>
-                    <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)}/></Col>
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>Confirm Password:</Form.Label></Col>
                     <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)}/></Col>
                 </Form.Group>
                 
