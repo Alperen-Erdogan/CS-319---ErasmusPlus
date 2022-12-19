@@ -17,9 +17,9 @@
     background-color: lightgrey;
     border-radius: 15px;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
-    height: fit-content;
+    height: 67vh;
 }
 
 .profileOVIcon{

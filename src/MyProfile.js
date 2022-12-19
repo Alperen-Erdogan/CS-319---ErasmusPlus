@@ -26,8 +26,8 @@ function MyProfile() {
                         <Row className = 'ProfileOVFirstRow'>  
                             <Col className='pfpCol'><Image  src={pfp} className = "pfp" style={{borderRadius: "50%"}}/></Col>
                             <Col>
-                                <Row style={{marginTop: "8vh"}}><Form.Text style={{fontSize: "25px", color: "black"}}> Student name here </Form.Text></Row>    
-                                <Row style={{marginTop: "1vh"}}><Form.Text style={{fontSize: "20px", color: "grey"}}> Student state here </Form.Text></Row>
+                                <Row id='user-name-myprofile' style={{marginTop: "8vh"}}><Form.Text style={{fontSize: "25px", color: "black"}}>{localStorage.getItem("firstName")} {localStorage.getItem("lastName")}</Form.Text></Row>    
+                                <Row style={{marginTop: "1vh"}}><Form.Text style={{fontSize: "20px", color: "grey"}}>{localStorage.getItem("userType")}</Form.Text></Row>
                             </Col>
                         </Row>
 
