@@ -49,3 +49,29 @@
 .doc-table-name{
     width: 85%;
   }
+.app-table-name{
+  width: 65%;
+}
+.app-download{
+  width: 10%;
+}
+.app-status{
+  width: 20%;
+}
+
+#status-pending{
+  color: orange;
+  font-weight: bold;
+}
+
+.new-button{
+  width: 100px;
+  background-color: #007AFF;
+  border:0px solid black;
+}
+
+.open-button{
+  width: 100px;
+  background-color: #3FC22B;
+  border:0px solid black;
+}
