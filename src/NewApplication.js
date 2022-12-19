@@ -92,8 +92,6 @@ function NewApplication() {
             </Row>
             <Row style={{marginTop: "1%"}}>
 
-                <Col style={{paddingLeft: "3.4vw"}}></Col>
-
                 <Col style={{paddingLeft: "86%"}}><Button onClick={() => create()} style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "green"}}>Create</Button></Col>
 
             </Row>               
