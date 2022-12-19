@@ -25,25 +25,26 @@ function Applications() {
   return (
     <div>   
       <Container fluid className = 'applCont'>
+        <div>
+          <main>
+            <Row>
               
+              <Col>
+                <span className='myapplication-span' style={{fontSize: "25px"}}><Clipboard2Fill size={42} className = 'applIcon'/>  My Applications</span>
+              </Col>
               
-              <div>
-                <main>
-                  <Row>
-                    <Col>
-                      <span className='myapplication-span'><Clipboard2Fill size={30} className = 'applIcon'/>  My Applications</span>
-                    </Col>
-                    <Col className='newapp-col'>
-                      <span className='button-span'><button onClick={() => setButtonPopup(true)}>New Application</button> </span>
-                    </Col>
-                  </Row>
-                </main>
-                <Popup trigger={buttonPopup} setTrigger = {setButtonPopup}>
-                  <NewApplication/>
-                </Popup>
-                
-              </div>
-    
+              <Col className='newapp-col'>
+                <span className='button-span'><button onClick={() => setButtonPopup(true)}>New Application</button> </span>
+              </Col>
+            
+            </Row>
+          </main>
+          
+          <Popup trigger={buttonPopup} setTrigger = {setButtonPopup}>
+            <NewApplication/>
+          </Popup>                
+        
+        </div>
       </Container>
     </div> 
   );
