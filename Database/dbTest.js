@@ -5,45 +5,59 @@ const MongoClient = require("mongodb").MongoClient
 
 dbConnect()
 
-const facStaff1 = new FacultyStaff({
-    name: "Efe Can",
-    lastName: "Tepe",
-    title: "Candidate Prof",
-    link: "bilkent.org"
-})
-
-const facStaff2 = new FacultyStaff({
-    name: "Hasan Can",
-    lastName: "Kaya",
-    title: "Comedian",
-    link: "tsf"
-})
-
-const facStaff3 = new FacultyStaff({
-    name: "Zeynep",
-    lastName: "Cagrici",
-    title: "Master Ninja",
-    link: "zeynep.com"
-})
-
 
 const faculty = new Faculty({
-    facultyName: "Bilkent Computer Science",
-    coordinatorName: "Efe Can Tepe"
+    facultyName: "Hacettepe Medicine",
+    coordinatorName: "Bilgesu Tepe"
 })
 
 const faculty1 = new Faculty({
-    facultyName: "Bilkent Electrics And Electronics",
-    coordinatorName: "Seref Tepe"
+    facultyName: "Ankara Medicine",
+    coordinatorName: "Zuhra Tepe"
 })
 
 const faculty2 = new Faculty({
-    facultyName: "Bilkent Art",
-    coordinatorName: "Halit Yavuz Ibik"
+    facultyName: "Cankaya Law",
+    coordinatorName: "Ugur Doga Yazici"
 })
 
+const faculty3 = new Faculty({
+    facultyName: "Istanbul University Medicine",
+    coordinatorName: "Aziz Sancar"
+})
+
+const faculty4 = new Faculty({
+    facultyName: "Ankara Medicine",
+    coordinatorName: "Zuhra Tepe"
+})
+
+const faculty6 = new Faculty({
+    facultyName: "Bilkent Engineering",
+    coordinatorName: "Orkun Ozyurt"
+})
+
+const faculty7 = new Faculty({
+    facultyName: "Bilgi History",
+    coordinatorName: "Emrah Safa Gurkan"
+})
+
+const faculty8 = new Faculty({
+    facultyName: "Bilkent CTIS",
+    coordinatorName: "Ayberk Kucukarslan"
+})
+
+const faculty9 = new Faculty({
+    facultyName: "Harvard Computer Science",
+    coordinatorName: "Arda Senyurek"
+})
 
 
 faculty.save()
 faculty1.save()
 faculty2.save()
+faculty3.save()
+faculty4.save()
+faculty6.save()
+faculty7.save()
+faculty8.save()
+faculty9.save()

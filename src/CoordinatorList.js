@@ -1,13 +1,26 @@
 import './CoordinatorList.css';
-import React from 'react';
+import React, { useMemo } from 'react';
 import TableData from './components/table-items.json'
 import { useState } from 'react'
 import Table from 'react-bootstrap/Table';
 import { People, PeopleFill } from 'react-bootstrap-icons';
 
+import axios from "axios"
+
+import useEffect from "react"
+
 function CoordinatorList() {
+
+
+    
+    useMemo(() => {
+        axios.post("http://localhost:5000/StudentCoordinator")
+             .then((result) => setContacts(result.data))
+             .catch(e => console.log(e))   
+    }, [])
+
     const pageTitle = "Coordinator List";
-    const [contacts, setContacts] = useState(TableData)
+    const [contacts, setContacts] = useState([])
     return (
         <div>
             <header><h3> <People size={42}/><span>Coordinators</span></h3></header>
@@ -22,8 +35,8 @@ function CoordinatorList() {
                     <tbody>
                         {contacts.map((contact)=> 
                             <tr>
-                                <td className='table-departmant'>{contact.Departmant}</td>
-                                <td className='table-coordinator'>{contact.Coordinator}</td>
+                                <td className='table-departmant'>{contact.facultyName}</td>
+                                <td className='table-coordinator'>{contact.coordinatorName}</td>
                             </tr>
                         )}
                         

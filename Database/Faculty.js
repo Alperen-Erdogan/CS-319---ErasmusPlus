@@ -7,10 +7,12 @@ const facultyScheme = new mongoose.Schema({
         required: [true, "Please Provide Faculty Name"]
     },
 
+    coordinatorName: {
+        type: String,
+        required: [true, "Please Provide Name"]
+    }
+
     
-
-
-
 })
 
 module.exports = mongoose.model.Coordinators || mongoose.model("Coordinators", facultyScheme)
