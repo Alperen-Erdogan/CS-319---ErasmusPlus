@@ -32,7 +32,7 @@ import TestTable from './TestTable';
 
 function App() {
   const pageTitle = "My Profile";
-  if ((localStorage.getItem("authenticated")) === "false") {
+  /*if ((localStorage.getItem("authenticated")) === "false") {
 
      return (
       <Router>
@@ -43,7 +43,7 @@ function App() {
       </Switch>
     </Router>
      )
-    }
+    }*/
   return (
     <>
     {

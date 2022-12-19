@@ -101,14 +101,15 @@ function Login() {
                     <Col className = "loginCol" style={{maxWidth:"60%", minWidth:"60%"}}><Form.Control  className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
                 </Form.Group>
                 <Row style={{marginTop: "5%"}}>
+                    
                     <Col className = "loginCol">
-                        <Button variant="primary" className = "customBtn" onClick={() => {submit()}}>
-                            Login
+                        <Button variant="secondary" className = "customBtn" href='/Register'>
+                            Register
                         </Button>
                     </Col>
-                    <Col className = "loginCol" style={{marginLeft:"60%"}}>
-                        <Button variant="primary" className = "customBtn" /*onClick={() => {submit()}} href={href }  TO DO*/  href='/Register'>
-                            Register
+                    <Col className = "loginCol" style={{marginLeft:"61.5%"}}>
+                        <Button variant="primary" className = "customBtn" onClick={() => {submit()}}>
+                            Login
                         </Button>
                     </Col>
                 </Row>

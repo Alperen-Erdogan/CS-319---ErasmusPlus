@@ -22,38 +22,38 @@ function EditProfile() {
             <Row>
                 <Form>
                     <Form.Group as = {Row} className="standardTxtInput">
-                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "25%", marginLeft: "3vh", marginRight: "3vh"}}><Form.Label>First Name</Form.Label></Col>
-                        <Col className = "editProfileCol"><Form.Control className = "standardTxtInput" type="firstName" placeholder="First Name" /></Col>
+                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "24%", marginLeft: "3%", marginRight: "3%"}}><Form.Label>First Name</Form.Label></Col>
+                        <Col className = "editProfileCol" style = {{maxWidth: "65%"}}><Form.Control className = "standardTxtInput" type="firstName" placeholder="First Name" /></Col>
                     </Form.Group>
 
                     <Form.Group as = {Row} className="standardTxtInput" controlId="formBasicPassword" >
-                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "25%", marginLeft: "3vh", marginRight: "3vh"}}><Form.Label>Surname</Form.Label></Col>
-                        <Col className = "editProfileCol"><Form.Control className = "standardTxtInput" type="surname" placeholder="Surname" /></Col>
+                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "24%", marginLeft: "3%", marginRight: "3%"}}><Form.Label>Surname</Form.Label></Col>
+                        <Col className = "editProfileCol" style = {{maxWidth: "65%"}}><Form.Control className = "standardTxtInput" type="surname" placeholder="Surname" /></Col>
                     </Form.Group>
                     
                     <Form.Group as = {Row} className="standardTxtInput">
-                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "25%", marginLeft: "3vh", marginRight: "3vh"}}><Form.Label>Email</Form.Label></Col>
-                        <Col className = "editProfileCol" ><Form.Control disabled className = "standardTxtInput" type="email" placeholder= "Email" /></Col>
+                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "24%", marginLeft: "3%", marginRight: "3%"}}><Form.Label>Email</Form.Label></Col>
+                        <Col className = "editProfileCol" style = {{maxWidth: "65%"}}><Form.Control disabled className = "standardTxtInput" type="email" placeholder= "Email" /></Col>
                     </Form.Group>
 
                     <Form.Group as = {Row} className="standardTxtInput">
-                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "25%", marginLeft: "3vh", marginRight: "3vh"}}><Form.Label>Bilkent ID</Form.Label></Col>
-                        <Col className = "editProfileCol"><Form.Control className = "standardTxtInput" type="bilkentID" placeholder="Bilkent ID" /></Col>
+                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "24%", marginLeft: "3%", marginRight: "3%"}}><Form.Label>Bilkent ID</Form.Label></Col>
+                        <Col className = "editProfileCol" style = {{maxWidth: "65%"}}><Form.Control className = "standardTxtInput" type="bilkentID" placeholder="Bilkent ID" /></Col>
                     </Form.Group>
 
                     <Form.Group as = {Row} className="standardTxtInput" controlId="formBasicPassword">
-                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "25%", marginLeft: "3vh", marginRight: "3vh"}}><Form.Label>Date of Birth</Form.Label></Col>
-                        <Col className = "editProfileCol"><Form.Control className = "standardTxtInput" type="dob" placeholder="Date of Birth" /></Col>
+                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "24%", marginLeft: "3%", marginRight: "3%"}}><Form.Label>Date of Birth</Form.Label></Col>
+                        <Col className = "editProfileCol" style = {{maxWidth: "65%"}}><Form.Control className = "standardTxtInput" type="dob" placeholder="Date of Birth" /></Col>
                     </Form.Group>
 
                     <Form.Group as = {Row} className="standardTxtInput" controlId="formBasicPassword">
-                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "25%", marginLeft: "3vh", marginRight: "3vh"}}><Form.Label>CGPA</Form.Label></Col>
-                        <Col  className = "editProfileCol"><Form.Control className = "standardTxtInput" type="cgpa" placeholder="CGPA" /></Col>
+                        <Col className = "editProfileCol" style = {{marginTop: "5%", maxWidth: "24%", marginLeft: "3%", marginRight: "3%"}}><Form.Label>CGPA</Form.Label></Col>
+                        <Col  className = "editProfileCol" style = {{maxWidth: "65%"}}><Form.Control className = "standardTxtInput" type="cgpa" placeholder="CGPA" /></Col>
                     </Form.Group>
                 </Form>
             </Row>
             <Row>
-                <Col style={{width: "20%", marginLeft:"3.8%", paddingBottom:"3vh"}}>  
+                <Col style={{width: "20%", marginLeft:"3.8%", paddingBottom:"3%"}}>  
                     <Button variant="primary" className = 'customBtn'>
                         Confirm Changes
                     </Button>
