@@ -11,8 +11,6 @@ import useEffect from "react"
 
 function CoordinatorList() {
 
-
-    
     useMemo(() => {
         axios.post("http://localhost:5000/StudentCoordinator")
              .then((result) => setContacts(result.data))
