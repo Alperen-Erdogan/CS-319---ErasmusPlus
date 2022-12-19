@@ -22,7 +22,7 @@ const ArchivePage = () => {
     </Row>
   </Col>
   <Col className='header-col'>
-    <Container className='container-box2'><p id='type-id'>User Type</p></Container>
+    <Container className='container-box2'><p id='type-id'>{localStorage.getItem("userType")}</p></Container>
   </Col>
 </Row>
 
@@ -44,7 +44,7 @@ const ArchivePage = () => {
       </header>
 
       <Container fluid className='content-container'>
-        <Container fluid className='inner-content-container'>{/*Put contents in there*/ }
+        <Container fluid className='inner-content-container-new'>{/*Put contents in there*/ }
           
           <Archive/>
 
