@@ -3,6 +3,8 @@ const FacultyStaff = require("./FacultyStaf")
 const dbConnect = require("./dbConnect")
 const MongoClient = require("mongodb").MongoClient
 const SchoolCourses = require("./SchoolCourses")
+const Application = require("./Application")
+const fs = require("fs")
 dbConnect()
 
 /*
@@ -51,7 +53,7 @@ const faculty9 = new Faculty({
     coordinatorName: "Arda Senyurek"
 })
 */
-
+/*
 const school = new SchoolCourses({
     "Erasmus": "Erasmus",
     "HostUniName": "Uppsala University",
@@ -160,5 +162,32 @@ school2.save()
 school3.save()
 school4.save()
 school5.save()
+*/
 
+let totalFile = ""
+
+let reader = fs.createReadStream("test.pdf")
+
+reader.on("data", function(chunk){
+    totalFile.append(chunk)
+})
+
+console.log(toy)
+
+const app = new Application({
+    currentSemesterDate: "19.12.2000",
+    firstName: "Efe Can",
+    lastName: "Tepe",
+    hostUniversity: "Bilkent University",
+    department: "Computer Science",
+    cgpa: "2.43",
+    hostDepartment: "Computer Science",
+    binData: Buffer.from("test.pdf")
+})
+
+console.log("------------------------")
+console.log(app.binData.toString())
+console.log("------------------------")
+
+app.save()
 
