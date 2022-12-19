@@ -5,10 +5,21 @@ import { useState } from 'react'
 import Table from 'react-bootstrap/Table';
 import { Bank2 } from 'react-bootstrap-icons';
 
+import axios from "axios"
+import { useMemo } from 'react';
+import useEffect from "react"
+
 
 function SchoolsAndCourses() {
+
+    useMemo(() => {
+        axios.post("http://localhost:5000/SchoolCourses")
+             .then((result) => setContacts(result.data))
+             .catch(e => console.log(e))   
+    }, [])
+
     const pageTitle = "Coordinator List";
-    const [contacts, setContacts] = useState(TableData)
+    const [contacts, setContacts] = useState([])
     return (
         <div>
             <header><h3> <Bank2 size={42}/><span>Schools & Courses</span></h3></header>

@@ -3,6 +3,8 @@ const express = require("express")
 
 let router = express.Router()
 
+const SchoolCourses = require("./../../../Database/SchoolCourses")
+
 router.use(function(req,res,next){
     console.log(req.url)
     next()
@@ -10,13 +12,12 @@ router.use(function(req,res,next){
 
 router
     .route("/")
-    .get((req,res) => {
-        res.send("Hello World")
-    })
     .post((req,res) => {
-        let filterName = req.query.filterName
-        console.log(filterName)
-        res.send(filterName)
+        SchoolCourses
+        .find()
+        .then((result) => res.json(result))
+        .catch((e) => console.log(e))
+
     })
 
 module.exports = router
