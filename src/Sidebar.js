@@ -12,12 +12,12 @@ const Sidebar = () => {
     <SidebarMenu className="SideBar-design">
       <SidebarMenu.Header>
         <SidebarMenu.Brand>
-          <h3 id='user-name'>{localStorage.getItem("firstName")}</h3>
+          <h3 id='user-name'>{localStorage.getItem("firstName")} {localStorage.getItem("lastName")}</h3>
         </SidebarMenu.Brand>
       </SidebarMenu.Header>
 
       <SidebarMenu.Body>
-        <SidebarMenu.Nav className='nav-menu , selected'>
+        <SidebarMenu.Nav className='nav-menu'>
           <SidebarMenu.Nav.Link className='nav-link-style' href="/MyProfilePage" >
             <SidebarMenu.Nav.Icon>
               <PersonCircle size={36} />
