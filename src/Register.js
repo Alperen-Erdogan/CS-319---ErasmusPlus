@@ -138,6 +138,9 @@ function Register() {
                 <Button variant="primary" className = "customBtn" onClick={() => {submit()}} >
                     Register
                 </Button>
+                <Button variant="secondary" className = "customBtn" href='/login'>
+                    Back to Login
+                </Button>
             </Form>        
         </Container>
     </div>);
