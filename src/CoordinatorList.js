@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 import './table.css';
-import TableData from './components/table-items.json'
 import { useState } from 'react'
 import Table from 'react-bootstrap/Table';
 import { People } from 'react-bootstrap-icons';

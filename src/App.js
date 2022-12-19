@@ -61,7 +61,6 @@ function App() {
         <Route exact path="/SchoolPage" component={SchoolPage} />
         <Route exact path="/CoordinatorListPage" component={CoordinatorListPage} />
         <Route exact path="/NewApplicationPage" component={NewApplicationPage} />
-        <Route exact path="/TestPage" component={TestPage} />
         <Redirect to="/" />
       </Switch>
     </Router>

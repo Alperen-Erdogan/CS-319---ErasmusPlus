@@ -90,9 +90,9 @@ function NewApplication() {
                     </Form.Group>
                 </Form>
             </Row>
-            <Row>
-                <Col style={{paddingLeft: "3.4vw"}}><Button style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh"}}><ArrowLeft/></Button></Col>
-                <Col style={{paddingLeft: "52.5vw"}}><Button onClick={() => create()} style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "green"}}>Create</Button></Col>
+            <Row style={{marginTop: "1%"}}>
+                <Col style={{paddingLeft: "3.4vw"}}></Col>
+                <Col style={{paddingLeft: "51vw"}}><Button onClick={() => create()} style={{paddingLeft: "1vw", paddingRight: "1vw", paddingBottom: "0.8vh", backgroundColor: "green"}}>Create</Button></Col>
             </Row>               
         </Container>
     </div> 

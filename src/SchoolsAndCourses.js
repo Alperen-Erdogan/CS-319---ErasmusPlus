@@ -1,6 +1,5 @@
 import './table.css';
 import React from 'react';
-import TableData from './components/schools.json'
 import { useState } from 'react'
 import Table from 'react-bootstrap/Table';
 import { Bank2 } from 'react-bootstrap-icons';

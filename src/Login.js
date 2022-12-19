@@ -62,6 +62,10 @@ function Login() {
                 localStorage.setItem("firstName", res.data.user.firstName)
                 localStorage.setItem("lastName", res.data.user.lastName)
                 localStorage.setItem("userType", res.data.user.userType)
+                localStorage.setItem("email", res.data.user.email)
+                localStorage.setItem("bilkentID", res.data.user.bilkentId)
+                localStorage.setItem("doB", res.data.user.doB)
+                localStorage.setItem("cgpa", res.data.user.cgpa)
 
                 setAuthenticated(true) // It shows that it is authenticated
                 localStorage.setItem("authenticated", true)
