@@ -20,12 +20,9 @@ function Documents() {
     <div>   
         <Container fluid className = 'documentCont'>
             <Row>
-                <Form.Text style={{padding: "1.2vh"}}>
-                    <FileEarmarkBreakFill size={30} className = 'documentIcon'/>
-                    Documents
-                </Form.Text>
+                <header style={{marginTop: "1%", marginLeft: "0.5%"}}><h3> <FileEarmarkBreakFill size={42}/><span>Documents</span></h3></header>
             </Row>
-            <Row style = {{marginBottom: "5vh", backgroundColor: "#FFFFFF", maxWidth: "76vw", minWidth: "76vw", marginLeft: "1vw"}}>
+            <Row style = {{marginBottom: "5%", marginTop: "1%", backgroundColor: "#FFFFFF", maxWidth: "97%", minWidth: "97%", marginLeft: "1vw"}}>
                 <Table striped hover >
                     <thead style = {{backgroundColor: "darkGray"}}>
                         <tr>

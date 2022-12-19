@@ -21,7 +21,7 @@ function CoordinatorList() {
     const [contacts, setContacts] = useState([])
     return (
         <div>
-            <header><h3> <People size={42}/><span>Coordinators</span></h3></header>
+            <header ><h3> <People size={42}/><span>Coordinators</span></h3></header>
             <div className='main-table'>
                 <Table striped bordered hover>
                     <thead>
