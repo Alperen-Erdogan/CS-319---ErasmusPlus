@@ -142,7 +142,7 @@ function Register() {
                         </Button>
                     </Col>
                     <Col>
-                        <Button style={{marginLeft: "72%"}} variant="primary" className = "customBtnReg" onClick={() => {submit()}} >
+                        <Button style={{marginLeft: "79%"}} variant="primary" className = "customBtnReg" onClick={() => {submit()}} >
                             Register
                         </Button>
                     </Col>
