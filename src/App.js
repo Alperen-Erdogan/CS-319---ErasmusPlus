@@ -42,7 +42,6 @@ function App() {
         <Redirect replace to="/" />
       </Switch>
     </Router>
-     
      )
     }
   return (

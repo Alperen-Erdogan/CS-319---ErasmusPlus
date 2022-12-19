@@ -34,7 +34,10 @@ const userSchema = new mongoose.Schema({
         unique : false,
     },
 
-    
+    userType: {
+        type: String,
+        unique: false
+    }
 })
 
 module.exports = mongoose.model.Users || mongoose.model("Users", userSchema)

@@ -23,7 +23,7 @@ const MyProfilePage = () => {
     </Row>
   </Col>
   <Col className='header-col'>
-    <Container className='container-box2'><p id='type-id'>User Type</p></Container>
+    <Container className='container-box2'><p id='type-id'>{localStorage.getItem("userType")}</p></Container>
   </Col>
 </Row>
 

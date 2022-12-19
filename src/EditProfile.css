@@ -26,12 +26,11 @@
 }
 
 .pfp2{
-    max-width: 12vw;
-    max-height: 12vh;
-    margin-top: 3vh;
-    margin-left: 3vh;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 10%;
   }
   
   .pfpCol2{
-    max-width: 15vw;
+    max-width: 35%;
   }

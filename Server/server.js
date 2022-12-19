@@ -145,7 +145,8 @@ app.post("/register", (request, response) => {
           lastName: request.body.firstName,
           bilkentId: request.body.bilkentId,
           doB: request.body.doB,
-          cgpa: request.body.cgpa
+          cgpa: request.body.cgpa,
+          userType: request.body.userType
         });
 
         console.log(user)
