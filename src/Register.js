@@ -94,7 +94,7 @@ function Register() {
     <div>
         <Container className = 'registerCont2'>
             <Row>
-                <Col style={{maxWidth: "10vw", marginLeft: "1.5vw"}}>
+                <Col style={{maxWidth: "25%", marginLeft: "3%"}}>
                     <img src={logo2} className="Bilkent-Logo-login" alt='bilkent logo'/>
                 </Col>
                 <Col>
@@ -110,37 +110,45 @@ function Register() {
         <Container className = 'registerCont'>
             <Form>
                 <Form.Group as = {Row} controlId="formBasicEmail">
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>First Name:</Form.Label></Col>
-                    <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter First Name" onChange={e => setFirstName(e.target.value)}/></Col>
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>Last Name:</Form.Label></Col>
-                    <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter Last Name" onChange={e => setLastName(e.target.value)}/></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>First Name:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Control className = "standardTxtInput" type="firstName" placeholder="Enter First Name" onChange={e => setFirstName(e.target.value)}/></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>Last Name:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="lastName" placeholder="Enter Last Name" onChange={e => setLastName(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>Email:</Form.Label></Col>
-                    <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter Email" onChange={e => setEmail(e.target.value)}/></Col>
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>Bilkent ID:</Form.Label></Col>
-                    <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter Bilkent ID" onChange={e => setBilkentId(e.target.value)}/></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>Email:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="email" placeholder="Enter Email" onChange={e => setEmail(e.target.value)}/></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>Bilkent ID:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="bilkentId" placeholder="Enter Bilkent ID" onChange={e => setBilkentId(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>Date of Birth:</Form.Label></Col>
-                    <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter Date of Birth" onChange={e => setDoB(e.target.value)}/></Col>
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>CGPA:</Form.Label></Col>
-                    <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter CGPA" onChange={e => setCgpa(e.target.value)}/></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>Date of Birth:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="doB" placeholder="Enter Date of Birth" onChange={e => setDoB(e.target.value)}/></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "9%"}}>CGPA:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Control  className = "standardTxtInput" type="cgpa" placeholder="Enter CGPA" onChange={e => setCgpa(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "registerCol"><Form.Label style={{marginTop: "4.7vh"}}>Password:</Form.Label></Col>
-                    <Col className = "registerCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)}/></Col>
+                    <Col className = "registerCol"><Form.Label style={{marginTop: "5%", marginLeft: "50%"}}>Password:</Form.Label></Col>
+                    <Col className = "registerCol"><Form.Control style={{maxWidth:"25%", minWidth:"%25"}} className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)}/></Col>
                 </Form.Group>
                 
-                <Button variant="primary" className = "customBtn" onClick={() => {submit()}} >
-                    Register
-                </Button>
-                <Button variant="secondary" className = "customBtn" href='/login'>
-                    Back to Login
-                </Button>
+                <Row>
+                    <Col style={{width: "100%"}} >    
+                        <Button variant="secondary" className = "customBtn" href='/login'>
+                            Back to Login
+                        </Button>
+                    </Col>
+                    <Col>
+                        <Button style={{marginLeft: "72%"}} variant="primary" className = "customBtn" onClick={() => {submit()}} >
+                            Register
+                        </Button>
+                    </Col>
+                </Row>
+                
+                
             </Form>        
         </Container>
     </div>);
