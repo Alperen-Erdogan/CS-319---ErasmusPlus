@@ -94,15 +94,15 @@ function Register() {
     <div>
         <Container className = 'registerCont2'>
             <Row>
-                <Col style={{maxWidth: "25%", marginLeft: "3%"}}>
+                <Col style={{maxWidth: "25%", marginLeft: "2.8%"}}>
                     <img src={logo2} className="Bilkent-Logo-login" alt='bilkent logo'/>
                 </Col>
                 <Col>
                     <Row>
-                        <Form.Text style={{fontSize:"400%", fontWeight: "bold"}}>Bilkent University</Form.Text>
+                        <Form.Text style={{fontSize:"300%", fontWeight: "bold"}}>Bilkent University</Form.Text>
                     </Row>
                     <Row> 
-                        <Form.Text style={{fontSize:"180%", fontWeight: "bold"}}>ErasmusPlus</Form.Text>
+                        <Form.Text style={{fontSize:"140%", fontWeight: "bold"}}>ErasmusPlus</Form.Text>
                     </Row>
                 </Col>
             </Row>   
@@ -137,12 +137,12 @@ function Register() {
                 
                 <Row>
                     <Col style={{width: "100%"}} >    
-                        <Button variant="secondary" className = "customBtn" href='/login'>
+                        <Button variant="secondary" className = "customBtnReg" href='/login'>
                             Back to Login
                         </Button>
                     </Col>
                     <Col>
-                        <Button style={{marginLeft: "72%"}} variant="primary" className = "customBtn" onClick={() => {submit()}} >
+                        <Button style={{marginLeft: "72%"}} variant="primary" className = "customBtnReg" onClick={() => {submit()}} >
                             Register
                         </Button>
                     </Col>

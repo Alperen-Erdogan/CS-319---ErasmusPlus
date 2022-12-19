@@ -75,15 +75,15 @@ function Login() {
     <div>
         <Container className = 'loginCont2'>
             <Row>
-                <Col style={{maxWidth: "25%", marginLeft: "4.5%"}}>
+                <Col style={{maxWidth: "27%", marginLeft: "8%"}}>
                     <img src={logo2} className="Bilkent-Logo-login" alt='bilkent logo'/>
                 </Col>
                 <Col>
                     <Row>
-                        <Form.Text style={{fontSize:"60px", fontWeight: "bold"}}>Bilkent University</Form.Text>
+                        <Form.Text style={{fontSize:"300%", fontWeight: "bold"}}>Bilkent University</Form.Text>
                     </Row>
                     <Row> 
-                        <Form.Text style={{fontSize:"25px", fontWeight: "bold"}}>ErasmusPlus</Form.Text>
+                        <Form.Text style={{fontSize:"140%", fontWeight: "bold"}}>ErasmusPlus</Form.Text>
                     </Row>
                 </Col>
             </Row>   
@@ -92,21 +92,21 @@ function Login() {
         <Container className = 'loginCont'>
             <Form>
                 <Form.Group as = {Row} controlId="formBasicEmail">
-                    <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Email:</Form.Label></Col>
-                    <Col className = "loginCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)}/></Col>
+                    <Col className = "loginCol"><Form.Label style={{marginTop: "23%"}}>Email:</Form.Label></Col>
+                    <Col className = "loginCol" style={{maxWidth:"60%", minWidth:"60%"}}><Form.Control className = "standardTxtInput" type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)}/></Col>
                 </Form.Group>
 
                 <Form.Group as = {Row} controlId="formBasicPassword">
-                    <Col className = "loginCol"><Form.Label style={{marginTop: "5vh"}}>Password:</Form.Label></Col>
-                    <Col className = "loginCol"><Form.Control style={{maxWidth:"10vw", minWidth:"11vw"}} className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
+                    <Col className = "loginCol"><Form.Label style={{marginTop: "23%"}}>Password:</Form.Label></Col>
+                    <Col className = "loginCol" style={{maxWidth:"60%", minWidth:"60%"}}><Form.Control  className = "standardTxtInput" type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /></Col>
                 </Form.Group>
-                <Row style={{marginTop: "1vh"}}>
+                <Row style={{marginTop: "5%"}}>
                     <Col className = "loginCol">
                         <Button variant="primary" className = "customBtn" onClick={() => {submit()}}>
                             Login
                         </Button>
                     </Col>
-                    <Col className = "loginCol" style={{marginLeft:"9.4vw"}}>
+                    <Col className = "loginCol" style={{marginLeft:"60%"}}>
                         <Button variant="primary" className = "customBtn" /*onClick={() => {submit()}} href={href }  TO DO*/  href='/Register'>
                             Register
                         </Button>
